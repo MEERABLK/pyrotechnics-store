@@ -1,1 +1,1 @@
-# PyroSphere Bark Bark
+# PyroSphere
