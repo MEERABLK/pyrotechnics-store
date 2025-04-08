@@ -9,9 +9,12 @@
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/script.js" defer></script>
 </head>
-<body>
+<body class="body-image" >
+ 
 
-  <header>
+ 
+
+  <header class="home-header">
    
     <nav>
       <ul>
@@ -29,10 +32,18 @@
         <li><a href="pages/shop.html">Shop</a></li>  
     </ul>
 </nav>
+
+<div class="search-bar">
+    <input type="search" placeholder="Search products...">
+  </div>
+
+
+
     </header>
 
+    <div class="container">
         <!-- aside element is used for sidebar -->
- <aside>
+ <aside class="aside-content">
 <section>
 <h3>Firework Show Info</h3>
 <!-- clickable link -->
@@ -61,38 +72,66 @@
 </section>
  
 </aside>
- 
-  <main>
+
+
+
+  <main class="main-content">
+    <div class="main-borders">
     <h1>PyroSphere</h1>
     <h3>where sparks and spectacle collide</h3>
-    <section>
+  </div>
+    
+    <div class="paragraph-wrap">
+    <section class="testament">
      
       <p>Our store offer an easy way to explore and
         compare products by providing information you need, keeping up to date for different
         events happening and giving inspiration for the use of our products, without actual client
         and server exchange on purchasing or payment processing.</p>
     </section>
-    <section>
-      <p>At PyroSphere, we believe that everycelebration deserves to light up the sky. Our passion for
+    <section class="mission">
+      <p>At PyroSphere, we believe that every celebration deserves to light up the sky. Our passion for
         safe, spectaular pyrotechnics drives us to offer a selection of fireworks, smoke effects, and high-end
         pyrotechnic equipment. From professional event organizers to DIY enthusiasts, we're here to spark 
         creativity, bring joy to special moments, and keep the thrill of fireworks responsibly and beautifully. 
       </p>
     </section>
-
+  </div>
     <section>
+      <div class="product-row">
          <!-- featured products  -->
          <figure class=""> <!-- Used for images, diagrams, charts -->
-            <img src="" alt="">
+            <!-- <img src="images/multi-shot-tiger-fireworks-packet.png" alt="TNT shop Multi Aerials product from pexels images"> -->
+           
+           
+            <div class="card">
+                <img src="images/multi-shot-tiger-fireworks-packet.png" class="card-img-top" alt="TNT shop Multi Aerials product from pexels images">
+              
+                <div class="card-body">
+                  
+                  <a href="pages/product.html" class="btn btn-primary">Item Name</a>
+                
+                </div>
+              </div>
+              
+           
         </figure>
     
         <figure class=""> <!-- Used for images, diagrams, charts -->
-            <img src="" alt="">
+           
+            <div class="card">
+            <img src="images/single-shot-firework-tube.png" alt="TNT shop other Aerials #100 product">
+            <div class="card-body">
+                <a href="pages/product.html" class="btn btn-primary">Item Name</a>
+            </div>
+        </div>
         </figure>
+
+      </div>
         </section>
   </main>
-
-  <footer>
+</div>
+  <footer class="footer-white">
     <p>&copy; 2025 Meerab Khan & Jacob Magera</p>
   </footer>
 

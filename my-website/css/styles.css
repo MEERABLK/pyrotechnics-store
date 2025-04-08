@@ -49,3 +49,149 @@
     width: 5%;
     height: 25%;
 }
+
+
+
+
+/*  # Main CSS file */
+.card img
+{
+    display: flex;
+ 
+    width: 200px; 
+    height: 200px; 
+    margin: 10px auto; 
+    padding: 10px; 
+    background-color: #f5f5f5; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  
+}
+
+/* to put the item name in the card */
+.btn.btn-primary
+{
+    font-size: 16px;
+    font-weight: bold;
+     color: black;
+  
+}
+.home-header{
+    background-color: #7f8285;
+    /* margin: 20px 25px 20px 25px; */
+
+    font-family: Arial, sans-serif;
+    text-align: center;
+    word-spacing: 100px;
+    /*for larger header*/
+    height: 100px;
+flex-wrap: wrap;
+margin-top: 10%;
+margin-left: 10%;
+margin-right: 10%;
+margin-bottom: 1%;
+    /*CSS flexible box layout change layout of its children*/ 
+    display: flex;
+   justify-content: center;  /* Centers horizontally in flex container from MDN to distribute spaces around*/
+  align-items: center; /* Centers vertically on cross axis */
+}
+
+
+
+nav ul 
+{
+    list-style-type: none;
+    display: flex; /* horizontal layout */
+    gap: 30px;
+    
+}
+
+.search-bar
+{
+    display:flex;
+    margin-left: 60%;
+}
+
+
+  .main-content {
+    /* 3/4 of the horizontal space */
+    flex: 3;
+    padding: 20px;
+    border: 2px solid #ccc; 
+    text-align: center;
+   background-color: #ffffff54; 
+  }
+
+  .main-borders
+  {
+    border: 2px solid #8a8484; 
+    text-align: center;
+   background-color: #ffffff29; 
+  }
+
+
+  .aside-content 
+  {
+    /* 1/4 of the space */
+    flex: 1;
+    padding: 20px;
+    background-color: #000000c1;
+    color:white;
+    
+  }
+.paragraph-wrap
+{
+    display:flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 0;
+}
+  .testament {
+    border: 2px solid #ccc; 
+    /* inside parent take up equal space with 
+    other flex items that also have flex: 1
+     */
+
+    flex: 1;
+    text-align: center;
+    padding: 15px;                  /* space inside border */
+  background-color: #ffffff54;      
+   
+  }
+  
+  .mission {
+    flex: 1;
+    border: 2px solid #ccc; 
+    text-align: center;
+    padding: 15px;                  /* space inside border */
+   background-color: #ffffff54;  
+  }
+.body-image{
+  background-image:url('../images/pexels-designecologist-2526105.jpg');
+  background-size: cover; /* cover the whole page */
+  background-repeat: no-repeat; /* Prevents repeat of image */
+  background-position: center; /* Centers the image */
+
+}
+
+.footer-white{
+  color:white;
+  text-align: center;
+}
+
+    .container {
+      display:flex;
+      margin-left: 10%;
+      background-color: #000000; /* full solid background behind content */
+      margin-right: 10%;
+
+    }
+
+
+.product-row
+{
+  display: flex;
+  flex-wrap: wrap; /* next line if needed */
+  gap: 20px; /* space between cards */
+  justify-content: center; /* center horizontally */
+  padding: 20px;
+}
