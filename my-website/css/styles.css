@@ -1,1 +1,51 @@
 /*  # Main CSS file */
+
+/* Shop page styles */
+#shopContainer {
+    display: inline-flex;
+    flex-grow: 1;
+    width: 100%;
+    background-color: rgb(158, 158, 223);
+}
+
+.fireworkImage {
+    width: 10%;
+    background-color: red;
+}
+
+#shopPage {
+    display: inline-block;
+    width: 80%;
+    background-color: green;
+}
+
+.banner {
+    display: flexbox;
+    background-color: blue;
+    width: auto;
+    margin: 0% 5%;
+    height: 8em;
+}
+
+.navLinkBar {
+    display: inline-flex;
+    background-color: brown;
+    width: 90%;
+    height: 40%;
+    margin: 2% 5%;
+}
+
+.searchBar {
+    display: inline-flex;
+    background-color: rgb(0, 255, 64);
+    margin: 0% 2% 0% 50%;
+    width: 25%;
+    height: 25%
+}
+
+.cartButton {
+    display: inline;
+    background-color: rgb(0, 255, 255);
+    width: 5%;
+    height: 25%;
+}
