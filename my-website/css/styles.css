@@ -184,7 +184,7 @@ color:orange;
 .container {
   display:flex;
       margin-left: 10%;
-      background-color: #000000; /* full solid background behind content */
+      background-color: #000000; /*solid background behind content */
       margin-right: 10%;
 
     }
@@ -193,9 +193,9 @@ color:orange;
 .product-row
 {
   display: flex;
-  flex-wrap: wrap; /* next line if needed */
+  flex-wrap: wrap; 
   gap: 20px; /* space between cards */
-  justify-content: center; /* center horizontally */
+  justify-content: center; 
   padding: 20px;
 }
 
