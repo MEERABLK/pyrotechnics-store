@@ -62,9 +62,6 @@
     height: 200px; 
     margin: 10px auto; 
     padding: 10px; 
-    background-color: #f5f5f5; 
-    border-radius: 10px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  
 }
 
 /* to put the item name in the card */
@@ -72,11 +69,11 @@
 {
     font-size: 16px;
     font-weight: bold;
-     color: black;
+     color: rgba(246, 242, 242, 0.999);
   
 }
 .home-header{
-    background-color: #7f8285;
+    background-color:  rgba(139, 0, 0, 0.71);
     /* margin: 20px 25px 20px 25px; */
 
     font-family: Arial, sans-serif;
@@ -85,10 +82,9 @@
     /*for larger header*/
     height: 100px;
 flex-wrap: wrap;
-margin-top: 10%;
+
 margin-left: 10%;
 margin-right: 10%;
-margin-bottom: 1%;
     /*CSS flexible box layout change layout of its children*/ 
     display: flex;
    justify-content: center;  /* Centers horizontally in flex container from MDN to distribute spaces around*/
@@ -116,16 +112,19 @@ nav ul
     /* 3/4 of the horizontal space */
     flex: 3;
     padding: 20px;
-    border: 2px solid #ccc; 
+    border: 2px solid #000000; 
     text-align: center;
-   background-color: #ffffff54; 
+    background-color: #000000c1;
+   color: rgba(255, 255, 255, 0.9);
+   text-shadow: 0 0 10px rgb(255, 26, 26), 0 0 15px rgba(255, 0, 0, 0.8), 0 0 20px rgba(255, 0, 0, 0.6); /* Glowing text */
+
   }
 
   .main-borders
   {
-    border: 2px solid #8a8484; 
+    border: 2px solid #00000000; 
     text-align: center;
-   background-color: #ffffff29; 
+    background-color: #000000c1;
   }
 
 
@@ -135,7 +134,8 @@ nav ul
     flex: 1;
     padding: 20px;
     background-color: #000000c1;
-    color:white;
+    color:rgb(218, 239, 255);
+    border: 2px solid rgb(255, 72, 0);
     
   }
 .paragraph-wrap
@@ -146,30 +146,33 @@ nav ul
     padding: 20px 0;
 }
   .testament {
-    border: 2px solid #ccc; 
+    border: 2px solid rgb(255, 72, 0); 
     /* inside parent take up equal space with 
     other flex items that also have flex: 1
      */
-
+color:orange;
     flex: 1;
     text-align: center;
     padding: 15px;                  /* space inside border */
-  background-color: #ffffff54;      
+    background-color: #000000ac;
    
   }
   
   .mission {
+    color:orange;
     flex: 1;
-    border: 2px solid #ccc; 
+    border: 2px solid rgb(255, 72, 0); 
     text-align: center;
     padding: 15px;                  /* space inside border */
-   background-color: #ffffff54;  
+    background-color: #000000c1;
   }
 .body-image{
+
   background-image:url('../images/pexels-designecologist-2526105.jpg');
   background-size: cover; /* cover the whole page */
   background-repeat: no-repeat; /* Prevents repeat of image */
   background-position: center; /* Centers the image */
+
 
 }
 
@@ -178,8 +181,8 @@ nav ul
   text-align: center;
 }
 
-    .container {
-      display:flex;
+.container {
+  display:flex;
       margin-left: 10%;
       background-color: #000000; /* full solid background behind content */
       margin-right: 10%;
@@ -194,4 +197,57 @@ nav ul
   gap: 20px; /* space between cards */
   justify-content: center; /* center horizontally */
   padding: 20px;
+}
+
+.a-header
+{
+text-decoration: none;
+/* shorthand property from MDN for slower hover in out like Bell */
+transition: all 0.25s ease-in-out;
+color:rgb(255, 255, 255);
+background-color: #720404;
+padding: 10px;
+
+}
+
+/* <a> elements using pseudo-classes */
+.a-header:hover
+{
+    
+    /* for highlight set up :hover in MDN */
+    width: 10em;
+  height: 5ex;
+  background-color: rgba(143, 14, 14, 0.397);
+  color:orangered;
+  font-size: 18px;
+ /*to underline the links*/
+ text-decoration: none;
+ /* For shadow and glowing under words from MDN text-shadow: 4px 4px 5px red;*/
+/* text-shadow: 4px, 4px 5px rgb(0, 195, 255);  */
+text-shadow: 0 0 5px rgb(255, 0, 0), 0 0 10px rgb(255, 0, 0);
+border-bottom: 1px solid white;
+
+}
+
+/* form login */
+.login
+{
+ text-shadow: none;
+background-color: rgba(47, 52, 65, 0.519); 
+padding: 20px;
+border-radius: 3px;
+width: 100%;
+max-width: 400px;
+margin: 50px auto; ;  /* center main content */
+}
+.signin-button
+{
+margin-left: 70%;
+background-color:aqua;
+border-radius: 5px; 
+padding-left: 15px;
+padding-right: 15px;
+padding-top: 5px;
+padding-bottom: 5px;
+
 }
