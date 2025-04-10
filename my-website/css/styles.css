@@ -1,5 +1,14 @@
 /*  # Main CSS file */
 
+html, body 
+{
+  /* to have the background cover the whole page */
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
 /* Shop page styles */
 #shopContainer {
     display: inline-flex;
@@ -53,7 +62,7 @@
 
 
 
-/*  # Main CSS file */
+/* home page css */
 .card img
 {
     display: flex;
@@ -230,8 +239,19 @@ border-bottom: 1px solid white;
 }
 
 /* form login */
+/* to be flipped sideways and margins on the side larger*/
+.body-image-login{
+
+  background-image:url('../images/pexels-rodrigo-teixeira-84331075-8881892.jpg');
+  background-size: cover; /* cover the whole page */
+  background-repeat: no-repeat; /* Prevents repeat of image */
+  background-position:  center; /* Centers the image */
+
+}
+
 .login
 {
+  
  text-shadow: none;
 background-color: rgba(47, 52, 65, 0.519); 
 padding: 20px;
@@ -251,3 +271,37 @@ padding-top: 5px;
 padding-bottom: 5px;
 
 }
+
+.login-main-content
+{
+/* to center the form */
+margin: auto;
+
+
+    padding: 20px;
+    border: 2px solid #000000; 
+    text-align: center;
+    background-color: #000000c1;
+   color: rgba(255, 255, 255, 0.9);
+   text-shadow: 0 0 10px rgb(255, 26, 26), 0 0 15px rgba(255, 0, 0, 0.8), 0 0 20px rgba(255, 0, 0, 0.6); /* Glowing text */
+
+  }
+
+
+/* form contact */
+.contact
+{
+
+  text-shadow: none;
+  background-color: rgba(47, 52, 65, 0.519); 
+  padding: 20px;
+  border-radius: 3px;
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto; ;  /* center main content */
+
+}
+
+
+
+

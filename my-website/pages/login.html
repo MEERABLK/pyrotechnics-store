@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="../css/styles.css">
   <script src="js/script.js" defer></script>
 </head>
-<body class="body-image" >
- 
+<body class="body-image-login" >
+ <div class="content-unflipped">
 
  
 
@@ -41,41 +41,13 @@
     </header>
 
     <div class="container">
-        <!-- aside element is used for sidebar -->
- <aside class="aside-content">
-<section>
-<h3>Firework Show Info</h3>
-<!-- clickable link -->
+       
+ 
 
-</section>
+<main  class="login-main-content">
 
-<section>
-    <h3>  Store Locations</h3>
-<!-- clickable link -->
-</section>
-
-
-<section>
-    <!-- these will act as button with javascript filtering -->
-    <h3>Shopping Categories</h3>
-    <ul>
-<li>Fireworks</li>
-<li>Pyrotechnic Equipment</li>
-<li>Smoke Grenades & Color Smoke</li>
-<li>Firecrackers</li>
-<li>Automotive Airbags</li>
-<li>Safety Gear</li>
-<li>DIY Pyro Kits & Recipes</li>
-<li>Event Tickets</li>
- </ul>
-</section>
-
-</aside>
-
-<main  class="main-content">
-
-    <div class="login-centering">
-    <form class="login" action="/submit" method="post">
+    <div >
+    <form class="login" action="/login" method="login">
         <h1 style="font-size: 50px;">LOGIN</h1>
         <input type="text" id="username" placeholder="Username" name="username" required style="width: 350px;height: 50px; border-color: white; background-color:rgba(47, 52, 65, 0.519)">
       
@@ -84,7 +56,7 @@
         <input type="password" id="password" placeholder="Password" name="password" style="width: 350px; height: 50px; border-color: white; background-color: rgba(47, 52, 65, 0.519);">
         <br>
         <br>
-        <input class="signin-button" type="submit" value="Sign In" style="font-size: 20px; ">
+        <input class="signin-button" type="button" value="Sign In" style="font-size: 20px; ">
       </form>  <!-- Basic form -->
 
 
@@ -96,6 +68,7 @@
   <footer class="footer-white">
     <p>&copy; 2025 Meerab Khan & Jacob Magera</p>
   </footer>
+</div>
 
 </body>
 </html>
