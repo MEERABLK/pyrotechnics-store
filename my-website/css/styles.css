@@ -1,307 +1,357 @@
 /*  # Main CSS file */
 
-html, body 
+html,body 
 {
   /* to have the background cover the whole page */
   height: 100%;
-  margin: 0;
-  padding: 0;
+ 
 }
 
 
 /* Shop page styles */
 #shopContainer {
-    display: inline-flex;
-    flex-grow: 1;
-    width: 100%;
-    background-color: rgb(158, 158, 223);
+  display: inline-flex;
+  flex-grow: 1;
+  width: 100%;
+  background-color: rgb(158, 158, 223);
 }
 
 .fireworkImage {
-    width: 10%;
-    background-color: red;
+  width: 10%;
+  background-color: red;
 }
 
 #shopPage {
-    display: inline-block;
-    width: 80%;
-    background-color: green;
+  display: inline-block;
+  width: 80%;
+  background-color: green;
 }
 
 .banner {
-    display: flexbox;
-    background-color: blue;
-    width: auto;
-    margin: 0% 5%;
-    height: 8em;
+  display: flexbox;
+  background-color: blue;
+  width: auto;
+  margin: 0% 5%;
+  height: 8em;
 }
 
 .navLinkBar {
-    display: inline-flex;
-    background-color: brown;
-    width: 90%;
-    height: 40%;
-    margin: 2% 5%;
+  display: inline-flex;
+  background-color: brown;
+  width: 90%;
+  height: 40%;
+  margin: 2% 5%;
 }
 
 .searchBar {
-    display: inline-flex;
-    background-color: rgb(0, 255, 64);
-    margin: 0% 2% 0% 50%;
-    width: 25%;
-    height: 25%
+  display: inline-flex;
+  background-color: rgb(0, 255, 64);
+  margin: 0% 2% 0% 50%;
+  width: 25%;
+  height: 25%
 }
 
 .cartButton {
-    display: inline;
-    background-color: rgb(0, 255, 255);
-    width: 5%;
-    height: 25%;
+  display: inline;
+  background-color: rgb(0, 255, 255);
+  width: 5%;
+  height: 25%;
 }
 
 
 
 
 /* home page css */
-.card img
+.card img 
 {
-    display: flex;
- 
-    width: 200px; 
-    height: 200px; 
-    margin: 10px auto; 
-    padding: 10px; 
+  display: flex;
+
+  width: 200px;
+  height: 200px;
+  margin: 10px auto;
+  padding: 10px;
 }
 
-/* to put the item name in the card */
-.btn.btn-primary
+/* to put the item name near the card */
+.linkpage 
 {
-    font-size: 16px;
-    font-weight: bold;
-     color: rgba(246, 242, 242, 0.999);
-  
+  text-shadow: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgba(246, 242, 242, 0.999);
+
 }
-.home-header{
-    background-color:  rgba(139, 0, 0, 0.71);
-    /* margin: 20px 25px 20px 25px; */
 
-    font-family: Arial, sans-serif;
-    text-align: center;
-    word-spacing: 100px;
-    /*for larger header*/
-    height: 100px;
-flex-wrap: wrap;
+.home-header
+ {
+  /* previous assignment */
+  background-color: rgba(139, 0, 0, 0.71);
+  /* margin: 20px 25px 20px 25px; */
 
-margin-left: 10%;
-margin-right: 10%;
-    /*CSS flexible box layout change layout of its children*/ 
-    display: flex;
-   justify-content: center;  /* Centers horizontally in flex container from MDN to distribute spaces around*/
-  align-items: center; /* Centers vertically on cross axis */
+  font-family: Arial, sans-serif;
+  text-align: center;
+  word-spacing: 100px;
+  /*for larger header*/
+  height: 100px;
+  flex-wrap: wrap;
+
+  margin-left: 10%;
+  margin-right: 10%;
+  /*CSS flexible box layout change layout of its children*/
+  display: flex;
+  justify-content: center;
+  /* center vertically on cross axis */
+  align-items: center;
 }
 
 
 
 nav ul 
 {
-    list-style-type: none;
-    display: flex; /* horizontal layout */
-    gap: 30px;
-    
+  list-style-type: none;
+
+  /* horizontal layout */
+  display: flex;
+  gap: 30px;
+
 }
 
-.search-bar
+.search-bar 
 {
-    display:flex;
-    margin-left: 60%;
+  display: flex;
+  margin-left: 60%;
 }
 
 
-  .main-content {
-    /* 3/4 of the horizontal space */
-    flex: 3;
-    padding: 20px;
-    border: 2px solid #000000; 
-    text-align: center;
-    background-color: #000000c1;
-   color: rgba(255, 255, 255, 0.9);
-   text-shadow: 0 0 10px rgb(255, 26, 26), 0 0 15px rgba(255, 0, 0, 0.8), 0 0 20px rgba(255, 0, 0, 0.6); /* Glowing text */
-
-  }
-
-  .main-borders
-  {
-    border: 2px solid #00000000; 
-    text-align: center;
-    background-color: #000000c1;
-  }
-
-
-  .aside-content 
-  {
-    /* 1/4 of the space */
-    flex: 1;
-    padding: 20px;
-    background-color: #000000c1;
-    color:rgb(218, 239, 255);
-    border: 2px solid rgb(255, 72, 0);
-    
-  }
-.paragraph-wrap
+.main-content 
 {
-    display:flex;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 20px 0;
+  /* 3/4 of the horizontal space */
+  flex: 3;
+  padding: 20px;
+  border: 2px solid #000000;
+  text-align: center;
+  background-color: #000000c1;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 0 10px rgb(255, 26, 26), 0 0 15px rgba(255, 0, 0, 0.8), 0 0 20px rgba(255, 0, 0, 0.6);
+  /* Glowing text */
+
 }
-  .testament {
-    border: 2px solid rgb(255, 72, 0); 
-    /* inside parent take up equal space with 
+
+
+
+
+
+
+.aside-content
+ {
+  /* 1/4 of the space */
+  flex: 1;
+  padding: 20px;
+  background-color: #000000c1;
+  color: rgb(218, 239, 255);
+  border: 2px solid rgb(255, 72, 0);
+
+}
+
+
+.paragraph-wrap 
+{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.testament
+ {
+  text-shadow: none;
+  border: 2px solid rgb(255, 72, 0);
+  /* inside parent take up equal space with 
     other flex items that also have flex: 1
      */
-color:orange;
-    flex: 1;
-    text-align: center;
-    padding: 15px;                  /* space inside border */
-    background-color: #000000ac;
-   
-  }
-  
-  .mission {
-    color:orange;
-    flex: 1;
-    border: 2px solid rgb(255, 72, 0); 
-    text-align: center;
-    padding: 15px;                  /* space inside border */
-    background-color: #000000c1;
-  }
-.body-image{
+  color: orange;
+  flex: 1;
+  text-align: center;
 
-  background-image:url('../images/pexels-designecologist-2526105.jpg');
-  background-size: cover; /* cover the whole page */
-  background-repeat: no-repeat; /* Prevents repeat of image */
-  background-position: center; /* Centers the image */
+  /* space inside border */
+  padding: 15px;
+  background-color: #000000ac;
+
+}
+
+.mission 
+{
+  text-shadow: none;
+  color: orange;
+  flex: 1;
+  border: 2px solid rgb(255, 72, 0);
+  text-align: center;
+  padding: 15px;
+  background-color: #000000c1;
+}
+
+.body-image 
+{
+
+  background-image: url('../images/pexels-designecologist-2526105.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
 
 }
 
-.footer-white{
-  color:white;
+.footer-white 
+{
+  color: white;
   text-align: center;
 }
 
-.container {
-  display:flex;
-      margin-left: 10%;
-      background-color: #000000; /*solid background behind content */
-      margin-right: 10%;
 
-    }
-
-
-.product-row
+.container 
 {
   display: flex;
-  flex-wrap: wrap; 
-  gap: 20px; /* space between cards */
-  justify-content: center; 
+  margin-left: 10%;
+  /*solid background behind content */
+  background-color: #000000;
+  margin-right: 10%;
+
+}
+
+
+.product-row 
+{
+  display: flex;
+  flex-wrap: wrap;
+  /* space between cards */
+  gap: 20px;
+  justify-content: center;
   padding: 20px;
 }
 
-.a-header
+.a-header 
 {
-text-decoration: none;
-/* shorthand property from MDN for slower hover in out like Bell */
-transition: all 0.25s ease-in-out;
-color:rgb(255, 255, 255);
-background-color: #720404;
-padding: 10px;
+  text-decoration: none;
+  /* shorthand property from MDN for slower hover in out like Bell 
+from previous assignment*/
+  transition: all 0.25s ease-in-out;
+  color: rgb(255, 255, 255);
+  background-color: #720404;
+  padding: 10px;
 
 }
 
 /* <a> elements using pseudo-classes */
-.a-header:hover
+.a-header:hover 
 {
-    
-    /* for highlight set up :hover in MDN */
-    width: 10em;
+
+  /* for highlight set up :hover in MDN */
+  width: 10em;
   height: 5ex;
   background-color: rgba(143, 14, 14, 0.397);
-  color:orangered;
+  color: orangered;
   font-size: 18px;
- /*to underline the links*/
- text-decoration: none;
- /* For shadow and glowing under words from MDN text-shadow: 4px 4px 5px red;*/
-/* text-shadow: 4px, 4px 5px rgb(0, 195, 255);  */
-text-shadow: 0 0 5px rgb(255, 0, 0), 0 0 10px rgb(255, 0, 0);
-border-bottom: 1px solid white;
+  /*to underline the links*/
+  text-decoration: none;
+  /* For shadow and glowing under words from MDN text-shadow: 4px 4px 5px red;*/
+  /* text-shadow: 4px, 4px 5px rgb(0, 195, 255);  */
+  text-shadow: 0 0 5px rgb(255, 0, 0), 0 0 10px rgb(255, 0, 0);
+  border-bottom: 1px solid white;
 
 }
 
 /* form login */
 /* to be flipped sideways and margins on the side larger*/
-.body-image-login{
+.body-image-login 
+{
 
-  background-image:url('../images/pexels-rodrigo-teixeira-84331075-8881892.jpg');
-  background-size: cover; /* cover the whole page */
-  background-repeat: no-repeat; /* Prevents repeat of image */
-  background-position:  center; /* Centers the image */
+  background-image: url('../images/pexels-rodrigo-teixeira-84331075-8881892.jpg');
+
+  /* cover the whole page */
+  background-size: cover;
+  /* prevents repeat*/
+  background-repeat: no-repeat;
+
+  /* centers */
+  background-position: center;
 
 }
 
 .login
-{
-  
- text-shadow: none;
-background-color: rgba(47, 52, 65, 0.519); 
-padding: 20px;
-border-radius: 3px;
-width: 100%;
-max-width: 400px;
-margin: 50px auto; ;  /* center main content */
+ {
+
+
+  background-color: rgba(47, 52, 65, 0.519);
+  padding: 20px;
+  border-radius: 3px;
+  width: 100%;
+  max-width: 400px;
+  /* center main content */
+  margin: 50px auto;
 }
-.signin-button
+
+
+.signin-button 
 {
-margin-left: 70%;
-background-color:aqua;
-border-radius: 5px; 
-padding-left: 15px;
-padding-right: 15px;
-padding-top: 5px;
-padding-bottom: 5px;
+  margin-left: 70%;
+  background-color: aqua;
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 
 }
 
 .login-main-content
-{
-/* to center the form */
-margin: auto;
-
-
-    padding: 20px;
-    border: 2px solid #000000; 
-    text-align: center;
-    background-color: #000000c1;
-   color: rgba(255, 255, 255, 0.9);
-   text-shadow: 0 0 10px rgb(255, 26, 26), 0 0 15px rgba(255, 0, 0, 0.8), 0 0 20px rgba(255, 0, 0, 0.6); /* Glowing text */
-
-  }
-
-
-/* form contact */
-.contact
-{
-
-  text-shadow: none;
-  background-color: rgba(47, 52, 65, 0.519); 
+ {
+  /* to center the form */
+  margin: auto;
   padding: 20px;
-  border-radius: 3px;
-  width: 100%;
-  max-width: 600px;
-  margin: 50px auto; ;  /* center main content */
+  border: 2px solid #000000;
+  text-align: center;
+  background-color: #000000c1;
+  color: rgba(255, 255, 255, 0.9);
+ 
 
 }
 
 
+/* form contact */
+.contact {
 
+  background-color: rgba(47, 52, 65, 0.519);
+  padding: 20px;
+  border-radius: 3px;
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto;
 
+}
+.contact-main-content
+{
+  /* to center the form */
+  margin: auto;
+  padding: 20px;
+  border: 2px solid #000000;
+  text-align: center;
+  background-color: #000000c1;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* product details page */
+.product-main-content
+{
+  margin: auto;
+  padding: 20px;
+  border: 2px solid #000000;
+  text-align: center;
+  background-color: #000000c1;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.product-img
+{
+  height:10%;
+  width:10%;
+}
