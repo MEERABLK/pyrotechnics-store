@@ -4,62 +4,40 @@ html,body
 {
   /* to have the background cover the whole page */
   height: 100%;
- 
 }
 
+.pagecard {
+  min-width: 21%;
+  max-width: 24%;
+}
+
+.pagecard img 
+{
+  display: flex;
+
+  width: 200px;
+  height: 200px;
+  margin: 10px auto;
+  padding: 10px;
+}
 
 /* Shop page styles */
-#shopContainer {
+#filter-dropdown
+{
+  margin: 40px 0px 25px 60px;
+}
+
+#mainShopContainer
+{
   display: inline-flex;
-  flex-grow: 1;
-  width: 100%;
-  background-color: rgb(158, 158, 223);
 }
 
-.fireworkImage {
-  width: 10%;
-  background-color: red;
+#shopShoppingCategories
+{
+  width: fit-content;
+  color: white;
+  padding-left: 20px;
 }
-
-#shopPage {
-  display: inline-block;
-  width: 80%;
-  background-color: green;
-}
-
-.banner {
-  display: flexbox;
-  background-color: blue;
-  width: auto;
-  margin: 0% 5%;
-  height: 8em;
-}
-
-.navLinkBar {
-  display: inline-flex;
-  background-color: brown;
-  width: 90%;
-  height: 40%;
-  margin: 2% 5%;
-}
-
-.searchBar {
-  display: inline-flex;
-  background-color: rgb(0, 255, 64);
-  margin: 0% 2% 0% 50%;
-  width: 25%;
-  height: 25%
-}
-
-.cartButton {
-  display: inline;
-  background-color: rgb(0, 255, 255);
-  width: 5%;
-  height: 25%;
-}
-
-
-
 
 /* home page css */
 .card img 
@@ -104,8 +82,6 @@ html,body
   align-items: center;
 }
 
-
-
 nav ul 
 {
   list-style-type: none;
@@ -122,7 +98,6 @@ nav ul
   margin-left: 60%;
 }
 
-
 .main-content 
 {
   /* 3/4 of the horizontal space */
@@ -137,11 +112,6 @@ nav ul
 
 }
 
-
-
-
-
-
 .aside-content
  {
   /* 1/4 of the space */
@@ -152,7 +122,6 @@ nav ul
   border: 2px solid rgb(255, 72, 0);
 
 }
-
 
 .paragraph-wrap 
 {
@@ -176,7 +145,6 @@ nav ul
   /* space inside border */
   padding: 15px;
   background-color: #000000ac;
-
 }
 
 .mission 
@@ -192,13 +160,10 @@ nav ul
 
 .body-image 
 {
-
   background-image: url('../images/pexels-designecologist-2526105.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
-
 }
 
 .footer-white 
@@ -207,7 +172,6 @@ nav ul
   text-align: center;
 }
 
-
 .container 
 {
   display: flex;
@@ -215,9 +179,7 @@ nav ul
   /*solid background behind content */
   background-color: #000000;
   margin-right: 10%;
-
 }
-
 
 .product-row 
 {
@@ -238,13 +200,11 @@ from previous assignment*/
   color: rgb(255, 255, 255);
   background-color: #720404;
   padding: 10px;
-
 }
 
 /* <a> elements using pseudo-classes */
 .a-header:hover 
 {
-
   /* for highlight set up :hover in MDN */
   width: 10em;
   height: 5ex;
@@ -264,7 +224,6 @@ from previous assignment*/
 /* to be flipped sideways and margins on the side larger*/
 .body-image-login 
 {
-
   background-image: url('../images/pexels-rodrigo-teixeira-84331075-8881892.jpg');
 
   /* cover the whole page */
@@ -274,13 +233,10 @@ from previous assignment*/
 
   /* centers */
   background-position: center;
-
 }
 
 .login
  {
-
-
   background-color: rgba(47, 52, 65, 0.519);
   padding: 20px;
   border-radius: 3px;
@@ -289,7 +245,6 @@ from previous assignment*/
   /* center main content */
   margin: 50px auto;
 }
-
 
 .signin-button 
 {
@@ -300,7 +255,6 @@ from previous assignment*/
   padding-right: 15px;
   padding-top: 5px;
   padding-bottom: 5px;
-
 }
 
 .login-main-content
@@ -312,22 +266,18 @@ from previous assignment*/
   text-align: center;
   background-color: #000000c1;
   color: rgba(255, 255, 255, 0.9);
- 
-
 }
-
 
 /* form contact */
 .contact {
-
   background-color: rgba(47, 52, 65, 0.519);
   padding: 20px;
   border-radius: 3px;
   width: 100%;
   max-width: 600px;
   margin: 50px auto;
-
 }
+
 .contact-main-content
 {
   /* to center the form */

@@ -7,72 +7,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop</title>
 </head>
-<body>
-    <div id="shopContainer">
-        <div class="fireworkImage">
+<body class="body-image">
+    <header class="home-header">
 
+        <nav>
+          <ul>
+            <li><a class="a-header" href="../index.html">Home </a></li>
+            <li><a class="a-header" href="about.html">About</a></li>
+            <li><a class="a-header" href="contact.html">Contact</a></li>
+            <!-- cart page is linked with the button of cart -->
+            <li><a class="a-header" href="cart.html">Cart</a></li>
+            <!-- checkout appears after clicking on the button proceed to checkout linked with cart page -->
+            <!-- <li><a href="pages/checkout.html">Checkout</a></li>   -->
+            <li><a class="a-header" href="events.html">Events</a></li>
+            <li><a class="a-header" href="login.html">Login</a></li>
+            <!-- product details page appear after a click on a specific product(image) -->
+            <!-- <li><a href="pages/product.html">Products</a></li>  -->
+            <li><a class="a-header" href="shop.html">Shop</a></li>
+          </ul>
+        </nav>
+    
+        <div class="search-bar">
+          <input type="search" placeholder="Search products...">
         </div>
-        <div id="shopPage">
-            <div class="banner">
-                <div class="navLinkBar">
-                    <!-- inline block -->
-                    blabla
-                </div>
-                
-                <div class="searchBar">
-                </div>
-                <button class="cartButton">LI</button>
-            </div>
+      </header>
 
-            <div id="filterDropdown">
+    <div class="container">
+        <div id="shopPage">
+            <div id="filter-dropdown">
+                <select name="filter" style="width: 200px; height:30px;">
+                    
+                        <option  disabled selected>Filter and Sort Options</option>
+
+                    <option value="whistling">Whistling</option>
+                    <option value="multishot">multishot</option>
+                    <option value="smokey">smokey</option>
+                    <option value="somethingelse">somethingelse</option>
+                    <option value="somethingelseagain">somethingelseagain</option>
+                </select>
             </div>
 
             <div id="mainShopContainer">
-                <div id="shopShoppingCategories">
-                    <!-- inline block -->
-                     <h3>Shopping Categories</h3>
-                     <ul>
-                        <li>
-                            Fireworks
-                            <ul>
-                                <li>
-                                   Blue Sparkles
-                                </li>
-                                <li>
-                                    Whistling
-                                </li>
-                                <li>
-                                    Spinning
-                                </li>
-                            </ul>
-                        </li>
-                        <li> Fountains
-                            <ul>
-                                <li>
-                                   Raibow Fountain
-                                </li>
-                                <li>
-                                    White Sparkle Fountain
-                                </li>
-                                <li>
-                                    Emerald Fountain
-                                </li>
-                            </ul>
-                        </li>
-                     </ul>
+                <div class="aside-content">
+                    <section>
+                        <!-- these will act as button with javascript filtering -->
+                        <h3>Shopping Categories</h3>
+                        <ul>
+                          <li>Fireworks</li>
+                          <li>Pyrotechnic Equipment</li>
+                          <li>Smoke Grenades & Color Smoke</li>
+                          <li>Firecrackers</li>
+                          <li>Automotive Airbags</li>
+                          <li>Safety Gear</li>
+                          <li>DIY Pyro Kits & Recipes</li>
+                          <li>Event Tickets</li>
+                        </ul>
+                    </section>
                 </div>
 
                 <div id="shopItemContainer">
-                    <div class="itemCard">
-
-                    </div>
+                    <div class="product-row">
+                        <!-- featured products  -->
+                        <figure class=""> <!-- Used for images, diagrams, charts -->
+                          <!-- <img src="images/multi-shot-tiger-fireworks-packet.png" alt="TNT shop Multi Aerials product from pexels images"> -->
+                          <div class="pagecard">
+                            <img src="../images/multi-shot-tiger-fireworks-packet.png" class="card-img-top"
+                              alt="TNT shop Multi Aerials product from pexels images">
+              
+                            <div class="card-body">
+                              <a href="pages/product.html" class="linkpage">Item Name</a>
+                            </div>
+                          </div>
+                        </figure>
+              
+                        <figure class=""> <!-- Used for images, diagrams, charts -->
+              
+                          <div class="pagecard">
+                            <img src="../images/single-shot-firework-tube.png" alt="TNT shop other Aerials #100 product">
+                            <div class="card-body">
+                              <a href="pages/product.html" class="linkpage">Item Name</a>
+                            </div>
+                          </div>
+                        </figure>
+              
+                      </div>
                 </div>
             </div>
         </div>
-        <div class="fireworkImage">
-
-        </div>
-
     </div>
 </body>
 </html>
