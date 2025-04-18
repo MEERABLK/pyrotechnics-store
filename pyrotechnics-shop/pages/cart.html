@@ -1,0 +1,115 @@
+<!--  # Home Page -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A sample webpage">
+  <title>PyroSphere</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body class="body-image">
+
+
+
+
+  <header class="home-header">
+
+    <nav>
+      <ul>
+        <li><a class="a-header" href="../index.html">Home </a></li>
+        <li><a class="a-header" href="contact.html">Contact</a></li>
+        <!-- checkout appears after clicking on the button proceed to checkout linked with cart page -->
+        <!-- <li><a href="pages/checkout.html">Checkout</a></li>   -->
+        <li><a class="a-header" href="events.html">Events</a></li>
+        <li><a class="a-header" href="login.html">Login</a></li>
+        <!-- product details page appear after a click on a specific product(image) -->
+        <!-- <li><a href="pages/product.html">Products</a></li>  -->
+        <li><a class="a-header" href="shop.html">Shop</a></li>
+      </ul>
+    </nav>
+
+    <!-- for seperating search and cart buttons  -->
+    <div class="header-tools">
+        <div class="search-bar">
+          <input type="search" placeholder="Search products...">
+        </div>
+        
+        <!-- cart page is linked with the button of cart -->
+       <a  href="cart.html"  class="cart-icon"><span class="emojione-monotone--shopping-cart"></span></a>
+      </div>
+
+
+
+  </header>
+
+  <div class="container">
+    <main class="product-main-content">
+      <h2>SHOPPING CART</h2>
+     
+     
+     
+      <section>
+
+          <figure class=""> 
+
+            <div class="card">
+              <img src="../images/single-shot-firework-tube.png" alt="TNT shop other Aerials #100 product" class="product-img">
+              
+            </div>
+          </figure>
+       
+          <!-- section for the cart detail on product -->
+          <section>
+            <div>
+                <!-- adding placeholders -->
+                <h3 id="product-name">Product Title</h3> 
+                <button id="btn-remove-from-cart" class="btn btn-primary" style="background-color: rgb(243, 219, 8);"> Remove</button>
+                  
+                <br>
+                <br>
+                 <span id="price"><b> Price</b></span>
+                <br>
+                <br>
+                <!-- number of items left -->
+                <span id="qty"><b> QTY</b></span>
+               <br>
+               <br>
+               <span id="total"><b> TOTAL</b></span>
+              <br>
+            </section>
+
+        </section>
+
+        <!-- section for order summary -->
+
+        <section>
+    <h2>ORDER SUMMARY</h2>
+    <br>
+    <span id="total"><b> TOTAL</b></span>
+   <br>
+   <br>
+   <button id="btn-apply-coupon" class="btn btn-primary" style="background-color: rgb(243, 219, 8)"> Apply Coupon</button>
+   <button id="btn-shipping-coupon" class="btn btn-primary" style="background-color: rgb(243, 219, 8)"> Shipping Options</button>
+   <button id="btn-shipping-coupon" class="btn btn-primary" style="background-color: rgb(243, 219, 8);font-size: 20px;"> PROCEED TO CHECKOUT</button>
+
+
+</section>
+
+
+
+
+
+
+    </main>
+  </div>
+  <footer class="footer-white">
+    <p>&copy; 2025 Meerab Khan & Jacob Magera</p>
+  </footer>
+
+</body>
+
+</html>
