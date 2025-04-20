@@ -17,10 +17,10 @@
 
 
   <header class="home-header">
-
+  
     <nav>
       <ul>
-        <li><a class="a-header" href="index.html">Home </a></li>
+        <li><a class="a-header" href="index.html" id="currentPage">Home </a></li>
         <li><a class="a-header" href="pages/contact.html">Contact</a></li>
         <!-- checkout appears after clicking on the button proceed to checkout linked with cart page -->
         <!-- <li><a href="pages/checkout.html">Checkout</a></li>   -->
@@ -35,13 +35,15 @@
 
     <!-- for seperating search and cart buttons  -->
     <div class="header-tools">
-    <div class="search-bar">
-      <input type="search" placeholder="Search products...">
+      <div class="search-bar">
+        <input type="search" placeholder="Search products...">
+      </div>
+
+      <!-- cart page is linked with the button of cart -->
+      <a href="pages/cart.html" class="cart-icon">
+        <span class="emojione-monotone--shopping-cart"></span>
+      </a>
     </div>
-    
-    <!-- cart page is linked with the button of cart -->
-   <a  href="pages/cart.html"  class="cart-icon"><span class="emojione-monotone--shopping-cart"></span></a>
-  </div>
   </header>
 
   <div class="container">
@@ -64,13 +66,21 @@
         <h3>Shopping Categories</h3>
         <ul>
           <li>Fireworks</li>
+          <br>
           <li>Pyrotechnic Equipment</li>
+          <br>
           <li>Smoke Grenades & Color Smoke</li>
+          <br>
           <li>Firecrackers</li>
+          <br>
           <li>Automotive Airbags</li>
+          <br>
           <li>Safety Gear</li>
+          <br>
           <li>DIY Pyro Kits & Recipes</li>
+          <br>
           <li>Event Tickets</li>
+          <br>
         </ul>
       </section>
     </aside>
@@ -91,7 +101,7 @@
         </section>
         <section class="mission">
           <p>At PyroSphere, we believe that every celebration deserves to light up the sky. Our passion for
-            safe, spectaular pyrotechnics drives us to offer a selection of fireworks, smoke effects, and high-end
+            safe, spectacular pyrotechnics drives us to offer a selection of fireworks, smoke effects, and high-end
             pyrotechnic equipment. From professional event organizers to DIY enthusiasts, we're here to spark
             creativity, bring joy to special moments, and keep the thrill of fireworks responsibly and beautifully.
           </p>
@@ -131,4 +141,5 @@
   </footer>
 
 </body>
+
 </html>
