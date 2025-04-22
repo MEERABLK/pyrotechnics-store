@@ -1,0 +1,60 @@
+{
+    "categories": [
+{
+    "category_id": 1,
+    "category_Name": "Fireworks",
+    "description": "High-impact aerial and ground fireworks for celebrations"
+},
+{
+    "category_id": 2,
+    "category_Name": "Pyrotechnic Equipment",
+    "description": "Tools and gear for professionals to launch fireworks safely"
+  },
+  {
+    "category_id": 3,
+    "category_Name": "Smoke Grenades & Color Smoke",
+    "description": "Colored smoke effects for cars, parties, photography, and more"
+},
+
+{
+    "category_id": 4,
+    "category_Name": "Firecrackers",
+    "description": "Loud and fun crackers for festivals"
+},
+
+{
+    "category_id": 5,
+    "category_Name": "Safety Gear",
+    "description": "Goggles, gloves, and suits for safe pyrotechnics use"
+},
+{
+    "category_id": 6,
+    "category_Name": "DIY Pyro Kits & Recipes",
+    "description": "Craft your own fire-based effects with guided kits"
+},
+{
+    "category_id": 7,
+    "category_Name": "Event Tickets",
+    "description": "Passes to shows, competitions, and pyrotechnic expositions"
+}
+],
+
+
+    "products": [
+        {
+            "ItemID":1,
+            "category_id": 1,
+            "ItemTitle": "Tiger Multi-Shot Fireworks Packet",
+            "Description": "A 20-shot firework that lights up the night with red, blue, green, & purple colors.",
+            "Brand": "TNT Fireworks",
+            "UnitPrice": 49.99,
+            "QuantityInStock": 50,
+            "Make": "TNT Fireworks",
+            "ThumbnailImage": "images/multi-shot-tiger-fireworks-packet.png"
+          }
+
+          
+
+    ]
+
+}
