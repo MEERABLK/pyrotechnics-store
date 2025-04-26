@@ -8,7 +8,7 @@
 {
     "category_id": 2,
     "category_Name": "Pyrotechnic Equipment",
-    "description": "Tools and gear for professionals to launch fireworks safely"
+    "description": "Special effects equipment"
   },
   {
     "category_id": 3,
@@ -51,9 +51,66 @@
             "QuantityInStock": 50,
             "Make": "TNT Fireworks",
             "ThumbnailImage": "images/multi-shot-tiger-fireworks-packet.png"
+          },
+          {
+            "ItemID":2,
+            "category_id": 3,
+            "ItemTitle": "Colourful Smoke Grenade For Cars",
+            "Description": "Our smoke grenade are simple to ignite and produce non-toxic smoke, making them safe for outdoor use and eco-friendly.",
+            "Brand": "Enola Gaye WP40 ",
+            "UnitPrice": 20.00,
+            "QuantityInStock": 30,
+            "Make": "Enola Gaye",
+            "ThumbnailImage": "images/color-smoke-product.jpg"
+          },
+          
+
+          {
+            "ItemID":3,
+            "category_id": 1,
+            "ItemTitle": "No.100 TNT Tube",
+            "Description": "One of our highest flying fireworks",
+            "Brand": "TNT Fireworks ",
+            "UnitPrice": 15.00,
+            "QuantityInStock": 10,
+            "Make": "TNT Fireworks",
+            "ThumbnailImage": "images/single-shot-firework-tube.png"
+          },
+
+          {
+            "ItemID":4,
+            "category_id": 2,
+            "ItemTitle": "SafeFire-12 Receiver",
+            "Description": "A firing system component for safe trigger and control over pyrotechnic effects, such as fireworks or special effects",
+            "Brand": "Holatron",
+            "UnitPrice":  500.00,
+            "QuantityInStock": 30,
+            "Make": "Holatron Systems",
+            "ThumbnailImage": "images/single-shot-firework-tube.png"
+          },
+          {
+            "ItemID":5,
+            "category_id": 4,
+            "ItemTitle": "Firecrackers Packet",
+            "Description": "A pack of ladyfinger firecrackers",
+            "Brand": "Sunrich Fireworks ",
+            "UnitPrice": 2.00,
+            "QuantityInStock": 10,
+            "Make": "Sunrich Fireworks",
+            "ThumbnailImage": "images/firecracker-1.png"
+          },
+          {
+            "ItemID":5,
+            "category_id": 5,
+            "ItemTitle": "Helmet Set",
+            "Description": "Modern firefighter helmets to protect against heat, fire, and impacts.",
+            "Brand": "Bullard",
+            "UnitPrice": 250.00,
+            "QuantityInStock": 89,
+            "Make": "Globe Manufacturing",
+            "ThumbnailImage": "images/helmetset1.jpg"
           }
 
-          
 
     ]
 

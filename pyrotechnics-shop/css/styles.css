@@ -236,7 +236,7 @@ nav ul
 
 .body-image 
 {
-  background-image: url('../images/pexels-designecologist-2526105.jpg');
+  background-image: url('../images/fireworks-background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -303,7 +303,7 @@ from previous assignment*/
 /* to be flipped sideways and margins on the side larger*/
 .body-image-login 
 {
-  background-image: url('../images/pexels-rodrigo-teixeira-84331075-8881892.jpg');
+  background-image: url('../images/fire-background.jpg');
 
   /* cover the whole page */
   background-size: cover;
@@ -384,3 +384,10 @@ from previous assignment*/
   height:10%;
   width:10%;
 }
+/* events css */
+.events-main-content
+{
+color:white;
+text-align: center;
+}
+
