@@ -391,3 +391,111 @@ color:white;
 text-align: center;
 }
 
+/* Cart Css */
+
+#btn-remove-from-cart {
+  font-size: 1.7em;
+}
+
+#cart-header {
+  text-align: left;
+  padding: 1em;
+}
+
+#product-name {
+  font-size: 2em;
+  margin-top: 2.5em;
+}
+
+#shopping-cart {
+  width: 75em;
+  background-color: rgb(14, 13, 13);
+}
+
+#qty-label {
+  display: inline;
+  margin-left: 15%;
+  font-weight: bold;
+}
+
+#cart-item {
+  display: flex;
+  background-color: rgb(17, 17, 17);
+  margin: 1em;
+}
+
+#total-label {
+  display: inline;
+  margin-left: 15%;
+  font-weight: bold;
+}
+
+#price-label {
+  display: inline;
+  margin-left: 45%;
+  font-weight: bold;
+}
+
+#cart-product-info {
+  width: 58%;
+}
+
+#qty {
+  display: inline;
+  margin-left: 27%;
+  line-height: 18;
+  font-weight: bold;
+}
+
+#total {
+  display: inline;
+  margin-left: 27%;
+  font-weight: bold;
+  line-height: 18;
+}
+
+#price {
+  display: inline;
+  margin-left: 10%;
+  font-weight: bold;
+  line-height: 18;
+}
+
+#order-summary {
+  display: flex;
+  background-color: rgb(17, 17, 17);
+  margin: 1em;
+  
+}
+
+#final-total {
+  text-align: left;
+  margin-right: 80%;
+}
+
+#btn-apply-coupon {
+  padding: 0.4em 5% 0.4em 0.6em;
+  margin-left: 2%;
+  margin-right: 71%;
+  font-size: 1em;
+}
+
+#btn-shipping-options {
+  margin-right: 69%;
+  margin-top: 1em;
+  padding: 0.4em 0.5em;
+  font-size: 1em;
+}
+
+#btn-checkout {
+  padding: 0.4em 0.4em;
+  font-size: 1em;
+  margin: 0.7em 69% 0.5em 2%;
+}
+
+#summary-title {
+  text-align: left;
+  padding-left: 5%;
+}
+
+

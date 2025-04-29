@@ -48,11 +48,12 @@
 
   <div class="container">
     <main class="product-main-content">
-      <h2>SHOPPING CART</h2>
-     
-     
-     
-      <section>
+      <div id="shopping-cart">
+        <h2 id="cart-header">SHOPPING CART</h2>
+        <span id="price-label"><b> PRICE</b></span>
+        <span id="qty-label"><b> QTY</b></span>
+        <span id="total-label"><b> TOTAL</b></span>
+        <section id="cart-item">
 
           <figure class=""> 
 
@@ -64,49 +65,39 @@
        
           <!-- section for the cart detail on product -->
           <section>
-            <div>
                 <!-- adding placeholders -->
                 <h3 id="product-name">Product Title</h3> 
                 <button id="btn-remove-from-cart" class="btn btn-primary" style="background-color: rgb(243, 219, 8);"> Remove</button>
-                  
-                <br>
-                <br>
-                 <span id="price"><b> Price</b></span>
-                <br>
-                <br>
-                <!-- number of items left -->
+              </section>
+              <section id="cart-product-info">
+                <span id="price"><b> PRICE</b></span>
                 <span id="qty"><b> QTY</b></span>
+                <span id="total"><b> TOTAL</b></span>
+              </section>
                <br>
                <br>
-               <span id="total"><b> TOTAL</b></span>
               <br>
-            </section>
+            
 
         </section>
 
         <!-- section for order summary -->
 
-        <section>
-    <h2>ORDER SUMMARY</h2>
+        <section id="order-summary">
+          <div>
+    <h2 id="summary-title">ORDER SUMMARY</h2>
     <br>
-    <span id="total"><b> TOTAL</b></span>
+    <span id="final-total"><b> TOTAL</b></span>
    <br>
    <br>
-   <button id="btn-apply-coupon" class="btn btn-primary" style="background-color: rgb(243, 219, 8)"> Apply Coupon</button>
-   <button id="btn-shipping-coupon" class="btn btn-primary" style="background-color: rgb(243, 219, 8)"> Shipping Options</button>
+   <button id="btn-apply-coupon" class="btn btn-primary" style="background-color: rgb(243, 219, 8)"> <span id="apply-coupon-button">Apply Coupon</span></button>
+   <button id="btn-shipping-options" class="btn btn-primary" style="background-color: rgb(243, 219, 8)"> Shipping Options</button>
   
    <a href="checkout.html" class="linkpage">
-    <button id="btn-shipping-coupon" class="btn btn-primary" style="background-color: rgb(243, 219, 8);font-size: 20px;"> PROCEED TO CHECKOUT</button>
+    <button id="btn-checkout" class="btn btn-primary" style="background-color: rgb(243, 219, 8);font-size: 20px;"> PROCEED TO CHECKOUT</button>
  </a>
-
-
+</div>
 </section>
-
-
-
-
-
-
     </main>
   </div>
   <footer class="footer-white">
