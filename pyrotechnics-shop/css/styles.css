@@ -499,3 +499,20 @@ text-align: center;
 }
 
 
+/* theme switch */
+:root{
+  --fb-background-color: #121212;
+  --fb-font-color: #7b7281;
+}
+
+:root[data-theme ="light"]
+{
+   --fb-background-color: #ffffff;
+   --fb-font-color: #000000;
+} 
+body
+{
+   background-color: var(--fb-background-color);
+   color: var(--fb-font-color);
+}
+

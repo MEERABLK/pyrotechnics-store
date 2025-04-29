@@ -6,6 +6,40 @@ function initApp() {
     btnShow.addEventListener('click', fetchShows);
 }
 
+
+function toProduct()
+{
+    shows.forEach(show => 
+        {
+        const figures = document.getElementById("shopItemContainer");
+        
+
+        const tr = document.createElement('tr');
+       const idCol = createNewElement(tr, 'td', show.id);
+       const nameCol = createNewElement(tr, 'td', show.name);
+       nameCol.setAttribute("data-showid",show.id);
+       nameCol.addEventListener('click', (event) => {
+            //arrow function to be passed as a callback
+            //extract the shows id in question
+            //once you have the id we need  store the shows id in a local storage 
+            //to see on other page
+            //load the show details(team:product details)
+        
+        const showId = event.target.getAttribute("data-showid");
+        
+        console.log(showId);
+
+        localStorage.setItem("show-id",showId);
+
+        window.location = "show-details.html";
+
+
+        } );
+    });
+}
+
+
+
 async function fetchData(resourceUri) {
     try 
     {

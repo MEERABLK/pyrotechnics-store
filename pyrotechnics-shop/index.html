@@ -1,7 +1,6 @@
 <!--  # Home Page -->
 <!DOCTYPE html>
-<html lang="en">
-
+<html data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,6 +19,8 @@
   
     <nav>
       <ul>
+       
+
         <li><a class="a-header" href="index.html" id="currentPage">Home </a></li>
         <li><a class="a-header" href="pages/contact.html">Contact</a></li>
         <!-- checkout appears after clicking on the button proceed to checkout linked with cart page -->
@@ -44,7 +45,15 @@
         <span class="emojione-monotone--shopping-cart"></span>
       </a>
     </div>
+   
+    <div style="display:flex; gap:20px; margin-left: 50px;">
+      <li><button class="theme-switch" onclick="document.documentElement.setAttribute('data-theme',  'dark');">☾ Dark</button></li>
+      <li><button class="theme-switch" onclick="document.documentElement.setAttribute('data-theme', 'light');">&#10050 Light</button></li>
+    </div>
+
   </header>
+
+ 
 
   <div class="container">
     <!-- aside element is used for sidebar -->
