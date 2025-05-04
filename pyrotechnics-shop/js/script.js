@@ -38,8 +38,6 @@ function toProduct()
     });
 }
 
-
-
 async function fetchData(resourceUri) {
     try 
     {
@@ -97,10 +95,6 @@ function parseShows(shows) {
     });
 }
 
-
-
-
-
 function createNewElement(parent, eleName, content) 
 {
     const newElem = document.createElement(eleName);
@@ -111,3 +105,5 @@ function createNewElement(parent, eleName, content)
 
     return newElem;
 }
+
+

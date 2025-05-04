@@ -7,18 +7,30 @@ html,body
 }
 
 .pagecard {
-  min-width: 21%;
-  max-width: 24%;
+  width: 200px;
+  margin: 0px 20px 20px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #fff;
+
+  background-color: rgb(17, 17, 17);
 }
 
 .pagecard img 
 {
-  display: flex;
-
+  border: 2px solid #000000;
   width: 200px;
   height: 200px;
-  margin: 10px auto;
-  padding: 10px;
+}
+
+#card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 
 /* Shop page styles */
@@ -29,7 +41,7 @@ html,body
 
 #mainShopContainer
 {
-  display: inline-flex;
+  display: flex;
 }
 
 #shopShoppingCategories
@@ -37,6 +49,8 @@ html,body
   width: fit-content;
   color: white;
   padding-left: 20px;
+  height: fit-content;
+  flex-shrink: 1;
 }
 
 /* home page css */
@@ -67,9 +81,6 @@ nav ul {
 }
 
 }
-
-
-
 
 #currentPage 
 {
@@ -260,14 +271,13 @@ nav ul
   margin-right: 10%;
 }
 
-.product-row 
-{
+#shopItemContainer {
   display: flex;
   flex-wrap: wrap;
-  /* space between cards */
   gap: 20px;
-  justify-content: center;
-  padding: 20px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 
 .a-header 
