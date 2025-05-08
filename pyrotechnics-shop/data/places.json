@@ -1,0 +1,42 @@
+
+
+{
+    "categories": [
+    {
+    "id": 1,
+    "name": "Balloon Tours",
+    "description": "Parachutes",
+    
+    "markerIcon": "markers/artgallery.png"
+    },
+    {
+    "id": 2,
+    "name": "Fireworks Dealers",
+    "description": "find pyrotechnics in Montreal!!",
+    "markerIcon": "coffeeCup.png"
+    }
+    ],
+
+
+    "places": [
+    {
+    "name": "Montréal Montgolfière",
+    "description": "Balloon ride tour agency",
+    "point": {
+
+    "coordinates": "-73.2782,45.3205,0.0"
+    },
+    "categoryId": 1
+    },
+
+    
+    {
+    "name": "Boutique Kody Rock",
+    "description": "Fireworks & Flags ",
+    "point": {
+    "coordinates": "-73.55764783151828,45.51684318967159,0.0"
+    },
+    "categoryId": 2
+    }
+    ]
+   }

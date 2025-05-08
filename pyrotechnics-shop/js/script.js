@@ -1,6 +1,17 @@
+import { initLeafletMap } from "./modules/map.js";
+import { fetchData } from "./modules/fetchWrapper.js";
+
+
 document.addEventListener('DOMContentLoaded', initApp);
 
 function initApp() {
+
+    const page = document.querySelector('html')?.dataset.page;
+
+    if (page === "map") {
+        initLeafletMap(); // only run map on the map page
+    }
+
     console.log("initializing the app...");
     const btnShow = document.getElementById("btn-fetch-launches");
     btnShow.addEventListener('click', fetchShows);
@@ -38,22 +49,7 @@ function toProduct()
     });
 }
 
-async function fetchData(resourceUri) {
-    try 
-    {
-        const response = await fetch(resourceUri);
-        if (!response.ok) 
-            {
-            throw new Error(`Request failed! ${response.status}`);
-        }
-        const data = await response.json();
-        return data;
-    } 
-    catch (error) 
-    {
-        console.log(error.message);
-    }
-}
+
 
 async function fetchShows() 
 {
@@ -62,7 +58,7 @@ async function fetchShows()
     const data = await fetchData(uri);
 
     //results is the array name we fetch from JSON
-        const entries = data.results;
+        const entries = data.results.slice(0,3);
         parseShows(entries);
     }
 
@@ -73,7 +69,6 @@ function parseShows(shows) {
     
     shows.forEach(show => {
         const tr = document.createElement('tr');
-        createNewElement(tr, 'td', show.id);
         createNewElement(tr, 'td', show.name);
         //to access the inner objects of json and their attribute use .
         createNewElement(tr, 'td', show.mission.type);
