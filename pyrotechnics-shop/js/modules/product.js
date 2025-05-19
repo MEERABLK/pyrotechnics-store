@@ -18,7 +18,7 @@ export function initProductPage() {
 
       const productName = document.getElementById("product-name");
       const details = document.getElementById("details");
-      const price = document.getElementById("price");
+      const price = document.getElementById("price-id");
       const availability = document.getElementById("availability");
       const brand = document.getElementById("brand");     
       const make = document.getElementById("make");       
@@ -28,7 +28,7 @@ export function initProductPage() {
       if (details) details.textContent = product.Description;
       //to read the elements of html  we use innerhtml not text content but might change it
       //depending on css 
-      if (price) price.innerHTML = `<b>Price:</b> $${product.UnitPrice}`;
+      if (price) price.innerHTML = `<b>Price: $${product.UnitPrice}`;
 
       //set text content will not read the elements tags
       if (availability) availability.textContent = `In Stock: ${product.QuantityInStock}`;
