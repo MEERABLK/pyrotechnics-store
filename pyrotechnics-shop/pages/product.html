@@ -1,6 +1,6 @@
 <!--  # Home Page -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  data-page="product">
 
 <head>
   <meta charset="UTF-8">
@@ -8,7 +8,6 @@
   <meta name="description" content="A sample webpage">
   <title>PyroSphere</title>
   <link rel="stylesheet" href="../css/styles.css">
-  <script src="js/script.js" defer></script>
 </head>
 
 <body class="body-image">
@@ -53,7 +52,7 @@
           <figure class=""> 
 
             <div class="card">
-              <img src="../images/single-shot-firework-tube.png" alt="TNT shop other Aerials #100 product" class="product-img">
+              <!-- <img src="../images/single-shot-firework-tube.png" alt="TNT shop other Aerials #100 product" class="product-img"> -->
               
             </div>
           </figure>
@@ -80,10 +79,11 @@
         </section>
        
       <section>
+        <div class="card"><!-- Image injected here --></div>
+
 <!-- product description beneath image -->
-<div id="product-description">
-    <p>Product Details</p>
-</div>
+<div id="product-description"><p>Product Details</p></div> 
+
     </div>
 
 
@@ -110,13 +110,14 @@
   </footer>
 
 <!-- for switching page -->
-<script>
+<!-- <script>
   document.addEventListener('DOMContentLoaded', ()=> {
       alert(localStorage.getItem("show-id"));
   });
   // search for the product by its id in the catalog
- </script>
+ </script> -->
 
+  <script src="../js/script.js" defer></script>
 
 </body>
 

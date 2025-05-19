@@ -1,13 +1,12 @@
 <!--  # Home Page -->
 <!DOCTYPE html>
-<html data-theme="dark">
+<html data-theme="dark" data-page="home">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A sample webpage">
   <title>PyroSphere</title>
   <link rel="stylesheet" href="css/styles.css">
-  <script src="js/script.js" defer></script>
 </head>
 
 <body class="body-image">
@@ -115,30 +114,10 @@
         </section>
       </div>
       <section>
-        <div class="product-row">
+        <div class="product-row"id="shopItemContainer">
           <!-- featured products  -->
-          <figure class=""> <!-- Used for images, diagrams, charts -->
-            <!-- <img src="images/multi-shot-tiger-fireworks-packet.png" alt="TNT shop Multi Aerials product from pexels images"> -->
-            <div class="card">
-              <img src="images/multi-shot-tiger-fireworks-packet.png" class="card-img-top"
-                alt="TNT shop Multi Aerials product from pexels images">
-
-              <div class="card-body">
-                <a href="pages/product.html" class="linkpage">Item Name</a>
-              </div>
-            </div>
-          </figure>
-
-          <figure class=""> <!-- Used for images, diagrams, charts -->
-
-            <div class="card">
-              <img src="images/single-shot-firework-tube.png" alt="TNT shop other Aerials #100 product">
-              <div class="card-body">
-                <a href="pages/product.html" class="linkpage">Item Name</a>
-              </div>
-            </div>
-          </figure>
-
+         
+<figure id="card-container"></figure>
         </div>
       </section>
     </main>
@@ -146,6 +125,7 @@
   <footer class="footer-white">
     <p>&copy; 2025 Meerab Khan & Jacob Magera</p>
   </footer>
+<script type="module" src="js/script.js" defer></script>
 
 </body>
 
