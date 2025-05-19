@@ -52,6 +52,19 @@ function displayFilteredShopItems() {
       cardtitle.className = "linkpage";
       cardtitle.textContent = product.ItemTitle;
 
+
+      //using custom attribute for product id from json
+        cardtitle.setAttribute("data-id", product.ItemID);
+
+        //add click event to go to product.html after clicking the image title
+        cardtitle.addEventListener("click", (event) => {
+          //retrieve id
+          const id = event.target.getAttribute("data-id");
+//store it in sessionStorage
+          sessionStorage.setItem("product-id", id);
+          //go to product.html
+          window.location = "product.html";
+        });
       card.appendChild(cardtitle);
       }
     });
