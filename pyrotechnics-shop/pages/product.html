@@ -7,7 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A sample webpage">
   <title>PyroSphere</title>
+  
   <link rel="stylesheet" href="../css/styles.css">
+
 </head>
 
 <body class="body-image">
@@ -48,47 +50,51 @@
 
   <div class="container">
     <main class="product-main-content">
-      
-          <figure class=""> 
+        <div class="product-layout">
 
-            <div class="card">
-              <!-- <img src="../images/single-shot-firework-tube.png" alt="TNT shop other Aerials #100 product" class="product-img"> -->
+          <figure class="left-column"> 
+       <div class="product-card">
               
             </div>
           </figure>
 
 
-          <section>
+          <section class="right-column">
             <div>
                 <!-- adding placeholders -->
-                <h2 id="product-name">Product Title</h2> 
-                  <h3 id="details">Details</h3>
+                <h2 id="product-name"> </h2> 
+                  <h3 id="details"> </h3>
                   
                   <!-- number of items left -->
-                <span id="availability">Availability</span>
+                <span id="availability"> </span>
                 <br>
                 <br>
-                 <span id="price"><b> Price</b></span>
+                 <span id="price"></span>
                 <br>
                 <p> Quantity</p>
                 
                 <button>+</button>
                 <button>-</button>
-                
-        
-        </section>
-       
-      <section>
-        <div class="card"><!-- Image injected here --></div>
+              <br>
+              <br>
+    <button id="btn-add-cart" class="btn btn-primary" style="background-color: rgb(243, 219, 8);font-size: 20px;"> ADD TO CART</button>
+               </section>
+</div>
+    <!-- product description beneath image -->
+ <section>
+    <h1>Product Details</h1> 
 
-<!-- product description beneath image -->
-<div id="product-description"><p>Product Details</p></div> 
+        <p id="brand"></p>
+        <p id="make"></p>
+      </section>  
+       
+     
+
 
     </div>
 
 
 
-      </section>
 
 
       <!-- for customer reviews box in percentage like in amazon-->
@@ -116,8 +122,9 @@
   });
   // search for the product by its id in the catalog
  </script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 
-  <script src="../js/script.js" defer></script>
+<script type="module" src="../js/script.js" defer></script>
 
 </body>
 

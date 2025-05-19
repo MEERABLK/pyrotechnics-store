@@ -24,7 +24,9 @@ function initApp() {
   initProductPage();
 }
     const btnShow = document.getElementById("btn-fetch-launches");
-    btnShow.addEventListener('click', fetchShows);
+if (btnShow) {
+  btnShow.addEventListener('click', fetchShows);
+}
 }
 
 

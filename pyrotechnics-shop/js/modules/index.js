@@ -1,3 +1,6 @@
+
+
+//similar to shop.js the function is called in script.js as import
 export function initHomePage() {
   console.log("Loading featured products for home page...");
 
@@ -16,6 +19,8 @@ export function initHomePage() {
 
       featuredProducts.forEach(product => {
         const card = document.createElement("div");
+        //using css class to add the design structure of the product card inside a div which will
+        //have the figure
         card.className = "pagecard";
 
         const price = document.createElement("figcaption");
@@ -30,19 +35,21 @@ export function initHomePage() {
         const title = document.createElement("figcaption");
         title.className = "linkpage";
         title.textContent = product.ItemTitle;
+
+        //using custom attribute for product id from json
         title.setAttribute("data-id", product.ItemID);
 
-        //add click event to go to product.html
+        //add click event to go to product.html after clicking the image title
         title.addEventListener("click", (event) => {
+          //retrieve id
           const id = event.target.getAttribute("data-id");
-
-      [image, title].forEach(el => {
-  el.addEventListener("click", () => {
-    sessionStorage.setItem("product-id", product.ItemID);
-    window.location = "pages/product.html";
-  });
-});
-});
+//store it in sessionStorage
+          sessionStorage.setItem("product-id", id);
+          //go to product.html
+          window.location = "pages/product.html";
+        });
+//appendChild() inserts the title element into the card as its last child
+//similar to createelement method from fetch api to structure
         card.appendChild(price);
         card.appendChild(image);
         card.appendChild(title);

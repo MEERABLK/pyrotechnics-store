@@ -378,22 +378,51 @@ from previous assignment*/
   color: rgba(255, 255, 255, 0.9);
 }
 
-/* product details page */
+/* product details page overall fonts and colors*/
 .product-main-content
 {
   margin: auto;
   padding: 20px;
   border: 2px solid #000000;
-  text-align: center;
   background-color: #000000c1;
   color: rgba(255, 255, 255, 0.9);
 }
-
-.product-img
+.product-card img
 {
-  height:10%;
-  width:10%;
+
+  display: flex;
+
+  width: 200px;
+  height: 200px;
+  margin: 10px auto;
+  padding: 10px;
 }
+
+
+.product-layout
+{
+  display: flex;
+  justify-content: space-between;
+ gap:20%;
+}
+
+.left-column
+ {
+  /* inside parent take up equal space with 
+    other flex items that also have flex: 1
+     */
+  flex: 1;
+  text-align: center;
+
+}
+
+.right-column
+{
+  color: orange;
+  flex: 1;
+}
+
+
 /* events css */
 .events-main-content
 {

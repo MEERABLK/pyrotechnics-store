@@ -22,7 +22,7 @@ export function initProductPage() {
       const availability = document.getElementById("availability");
       const brand = document.getElementById("brand");     
       const make = document.getElementById("make");       
-      const imageContainer = document.querySelector(".card");
+      const imageContainer = document.querySelector(".product-card");
 
       if (productName) productName.textContent = product.ItemTitle;
       if (details) details.textContent = product.Description;
