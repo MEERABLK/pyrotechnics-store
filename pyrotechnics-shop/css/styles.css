@@ -436,7 +436,27 @@ from previous assignment*/
 {
 color:white;
 text-align: center;
+
+
+ /* to center the form */
+  margin: auto;
+  padding: 20px;
+  border: 2px solid #000000;
+  background-color: #000000c1;
+  color: rgba(255, 255, 255, 0.9);
+
 }
+/* to align properly */
+.event-container
+{
+
+  width: 80%;
+  margin: 0 auto;
+  background-color: #000000;
+  padding: 20px;
+}
+
+
 
 /* Cart Css */
 
@@ -562,13 +582,23 @@ body
    background-color: var(--fb-background-color);
    color: var(--fb-font-color);
 }
+
 /* checkout form */
 .checkout-main-content
  {
+
   /* to center the form */
   margin: auto;
-  padding: 20px;
   border: 2px solid #000000;
   background-color: #000000c1;
   color: rgba(255, 255, 255, 0.9);
+}
+
+.checkout {
+  background-color: rgba(47, 52, 65, 0.519);
+  padding: 20px;
+  border-radius: 3px;
+  width: 110%;
+  
+  margin: 50px auto;
 }

@@ -1,83 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A sample webpage">
-  <title>PyroSphere</title>
-  <link rel="stylesheet" href="../css/styles.css">
-  <script src="js/script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A sample webpage">
+    <title>PyroSphere</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="js/script.js" defer></script>
 </head>
-<body  class="body-image" >
 
- 
+<body class="body-image">
 
-  <header class="home-header">
-   
-    <nav>
-      <ul>
-        <li><a class="a-header" href="../index.html" >Home </a></li>
-        <li><a class="a-header" href="contact.html">Contact</a></li>
-          
-       <!-- checkout appears after clicking on the button proceed to checkout linked with cart page -->
-        <!-- <li><a href="pages/checkout.html">Checkout</a></li>   -->
-        <li><a class="a-header" href="events.html">Events</a></li> 
-        <li><a class="a-header" href="login.html">Login</a></li> 
-       <!-- product details page appear after a click on a specific product(image) -->
-        <!-- <li><a href="pages/product.html">Products</a></li>  -->
-        <li><a class="a-header" href="shop.html">Shop</a></li>  
-    </ul>
-</nav>
 
-<!-- for seperating search and cart buttons  -->
-<div class="header-tools">
-  
-  
-  <!-- cart page is linked with the button of cart -->
- <a  href="cart.html"  class="cart-icon"><span class="emojione-monotone--shopping-cart"></span></a>
-</div>
+
+    <header class="home-header">
+
+        <nav>
+            <ul>
+                <li><a class="a-header" href="../index.html">Home </a></li>
+                <li><a class="a-header" href="contact.html">Contact</a></li>
+
+                <!-- checkout appears after clicking on the button proceed to checkout linked with cart page -->
+                <!-- <li><a href="pages/checkout.html">Checkout</a></li>   -->
+                <li><a class="a-header" href="events.html">Events</a></li>
+                <li><a class="a-header" href="login.html">Login</a></li>
+                <!-- product details page appear after a click on a specific product(image) -->
+                <!-- <li><a href="pages/product.html">Products</a></li>  -->
+                <li><a class="a-header" href="shop.html">Shop</a></li>
+            </ul>
+        </nav>
+
+        <!-- for seperating search and cart buttons  -->
+        <div class="header-tools">
+
+
+            <!-- cart page is linked with the button of cart -->
+            <a href="cart.html" class="cart-icon"><span class="emojione-monotone--shopping-cart"></span></a>
+        </div>
 
 
 
     </header>
 
     <div class="container">
-       
+
+
+
+        <main class="checkout-main-content">
+
+            <div>
+                <form class="checkout" action="/checkout" method="checkout">
+                    <h1 style="font-size: 50px; text-align: center;">Checkout Form</h1>
+                    <br>
+                    <br>
+                    <fieldset>
+                        <legend style="font-size: 150%;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14"
+                                fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                            </svg>
+                            Contact Information</legend>
+                        <div style="text-align: center;">
+                            <input type="email" id="email" name="email" placeholder="Email Adress" required
+                                style="text-align:center; width: 100%;height: 50px; border-color: white; background-color:rgba(47, 52, 65, 0.519); color:azure; font-size:150%;">
+                        </div>
+                    </fieldset>
+
+                    <br>
+
+                    <fieldset>
+                        <legend style="font-size: 150%;">
+                            Shipping Details</legend>
+                        <input type="text" id="fullname" name="fullname" placeholder="Full Name" required
+                            style="text-align:center; width: 100%;height: 50px; border-color: white; background-color:rgba(47, 52, 65, 0.519); color:azure; font-size:150%;">
+
+                        <br>
+                        <br>
+                        <div style="display: flex; justify-content: center; ">
+                            <br>
+
+
+                            <select id="subject" name="subject" style="width: 100%; height:50px;">
+
+                                <option disabled selected style="text-align: center;">Choose Country</option>
+
+                                <option style="text-align: center;" value="ca">Canada</option>
+                                <option style="text-align: center;" value="us">USA</option>
+                                <option style="text-align: center;" value="fr">France</option>
+                                <option style="text-align: center;" value="en">England</option>
+                                <option style="text-align: center;" value="italy">Italy</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div style="display:flex; gap:2%">
+                            <input type="text" id="adress-one" placeholder="Address Line 1" name="adress-one" required
+                                style="text-align:center; width: 50%;height: 50px; border-color: white; background-color:rgba(47, 52, 65, 0.519); color:azure; font-size:100%;">
+                            <input type="text" id="adress-two" placeholder="Address Line 2" name="adress-two" required
+                                style="text-align:center; width: 50%;height: 50px; border-color: white; background-color:rgba(47, 52, 65, 0.519); color:azure; font-size:100%;">
+                        </div>
+                        <br>
+
+                        <div style="display:flex; gap:2%">
+                            <input type="text" id="city" placeholder="City" name="city" required
+                                style="text-align:center; width: 50%;height: 50px; border-color: white; background-color:rgba(47, 52, 65, 0.519); color:azure; font-size:100%;">
+                            <input type="text" id="province" placeholder=Province name="province" required
+                                style="text-align:center; width: 50%;height: 50px; border-color: white; background-color:rgba(47, 52, 65, 0.519); color:azure; font-size:100%;">
+                            <input type="text" id="postal-code" placeholder="Zip Code" name="postal-code" required
+                                style="text-align:center; width: 50%;height: 50px; border-color: white; background-color:rgba(47, 52, 65, 0.519); color:azure; font-size:100%;">
+                        </div>
+
+
+
+                    </fieldset>
+<br>
+                    <fieldset>
+                        <legend style="font-size: 150%;">
+                            Card Information
+
+                        </legend>
+                        <input type="text" id="holdername" name="holdername" placeholder="Name Of Cardholder" required
+                            style="text-align:center; width: 100%;height: 50px; border-color: white; background-color:rgba(47, 52, 65, 0.519); color:azure; font-size:150%;">
+
+                            <br>
+                            <br>
+<input type="text" id="creditnumber" name="creditnumber" placeholder="Credit Card Number" required
+                            style="text-align:center; width: 100%;height: 50px; border-color: white; background-color:rgba(47, 52, 65, 0.519); color:azure; font-size:150%;">
+
+<br>
+<br>
+                            <div style="display:flex; gap:2%">
+                                <input type="text" id="expiry-date" name="expiry-date" placeholder="Expiry Date" required
+                            style="text-align:center; width: 50%;height: 50px; border-color: white; background-color:rgba(47, 52, 65, 0.519); color:azure; font-size:150%;">
+                          
+                        <input type="text" id="cvc" name="cvc" placeholder="CVC" required
+                            style="text-align:center; width: 50%;height: 50px; border-color: white; background-color:rgba(47, 52, 65, 0.519); color:azure; font-size:150%;">
+                        </div>
+  
+                    </fieldset>
  
+                    <br>
+<div style="display: flex; justify-content: center;">
 
-<main  class="checkout-main-content">
-
-    <div >
-    <form class="login" action="/login" method="login">
-        <h1 style="font-size: 50px;">Checkout Form</h1>
-          <br>
-                <br>
-                <fieldset>               
-        <legend><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
-                      </svg> 
-                      Contact Information</legend>
-                        <input type="email" id="email" name="email" placeholder="Email Adress" required style="text-align:center; width: 350px;height: 50px; border-color: white; background-color:rgba(47, 52, 65, 0.519); color:azure; font-size:100%;">
-        </fieldset>
-      
-       <br>
-       <br>
-        <input type="password" id="password" placeholder="Password" name="password" style="width: 350px; height: 50px; border-color: white; background-color: rgba(47, 52, 65, 0.519); color:azure">
-        <br>
-        <br>
-        <input class="signin-button" type="button" value="Sign In" style="font-size: 20px; ">
-      </form>  <!-- Basic form -->
-
-
-</main>
+                                <input type="button" value="Place Order" style="font-size: 20px; width: 200px; height:50px ">
 </div>
+                </form> <!-- Basic form -->
 
 
-</div>
-  <footer class="footer-white">
-    <p>&copy; 2025 Meerab Khan & Jacob Magera</p>
-  </footer>
-</div>
+        </main>
+    </div>
+
+
+    </div>
+    <footer class="footer-white">
+        <p>&copy; 2025 Meerab Khan & Jacob Magera</p>
+    </footer>
+    </div>
 
 </body>
+
 </html>
