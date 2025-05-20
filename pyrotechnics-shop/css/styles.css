@@ -106,7 +106,7 @@ nav ul {
 }
 
 /* class for icon */
-.cart-icon 
+.cart-home-icon 
 {
   background-color: #720404;
   padding: 5%;
@@ -114,10 +114,20 @@ nav ul {
   align-items: center;
   justify-content: center;
   width: 30px;
-  height: 5px;
+  height: 15px;
   margin-left: 5%;
 }
-
+.cart-icon 
+{
+  background-color: #720404;
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 30px;
+  margin-left: 40%;
+}
 .header-tools 
 {
   display: flex;
@@ -392,8 +402,8 @@ from previous assignment*/
 
   display: flex;
 
-  width: 200px;
-  height: 200px;
+  width: 350px;
+  height: 350px;
   margin: 10px auto;
   padding: 10px;
 }
@@ -403,7 +413,6 @@ from previous assignment*/
 {
   display: flex;
   justify-content: space-between;
- gap:20%;
 }
 
 .left-column
@@ -412,7 +421,6 @@ from previous assignment*/
     other flex items that also have flex: 1
      */
   flex: 1;
-  text-align: center;
 
 }
 
@@ -553,4 +561,14 @@ body
 {
    background-color: var(--fb-background-color);
    color: var(--fb-font-color);
+}
+/* checkout form */
+.checkout-main-content
+ {
+  /* to center the form */
+  margin: auto;
+  padding: 20px;
+  border: 2px solid #000000;
+  background-color: #000000c1;
+  color: rgba(255, 255, 255, 0.9);
 }
