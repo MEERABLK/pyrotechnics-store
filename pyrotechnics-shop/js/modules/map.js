@@ -1,6 +1,8 @@
 
 import { fetchData } from "./fetchWrapper.js";
 
+let markers = new Map();
+
 export async function initLeafletMap()
 {
 console.log("inittializing the map...");
@@ -23,7 +25,7 @@ L.marker([45.508888,  -73.561668]).addTo(map)
 
 
 
-    const placesUri = "/data/places.json";
+    const placesUri = "../data/places.json";
     const locations = await fetchData(placesUri);
 
     console.log(locations);
@@ -34,8 +36,9 @@ L.marker([45.508888,  -73.561668]).addTo(map)
     renderLocations(map,locations);
 
 }
+displayLocations();
 
-function renderLocations(map,locations)
+function renderLocations(map, locations)
 {
 //loop overe locations places array and for each place 
     //create a marker object and add it to the map the marker 
@@ -44,14 +47,15 @@ function renderLocations(map,locations)
     // const category = locations.categories.find(category => category.id === place.categoryId);
     // console.log(category.markerIcon);
    
-   
-    var myIcon = L.icon({
-        iconUrl: '/markers/treasurechest.png',
-      
-    });
-
+    
     
     locations.places.forEach(place => {
+        let category = locations.categories.find(c => c.id == parseInt(place.categoryId));
+        let iconFile = category.markerIcon;
+        let myIcon = L.icon({
+            iconUrl: iconFile,
+        })
+        
         
         const coords = place.point.coordinates.split(','); 
       //index 1 of 
@@ -60,10 +64,40 @@ function renderLocations(map,locations)
 // longitude i
         const lon = parseFloat(coords[0]);
     
-        L.marker([lat, lon], {icon: myIcon}).addTo(map)
-    .bindPopup(`${place.name} <br>${place.description}`)
-    .openPopup();
+        let placeMarker = L.marker([lat, lon], {icon: myIcon});
+        placeMarker.addTo(map).bindPopup(`${place.name} <br>${place.description}`);
+        markers.set(place.locationId, placeMarker);
 
 
     });
+}
+
+function displayLocations() {
+    fetch("../data/places.json")
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return response.json(); // Parses JSON
+    })
+    .then(data => {
+        const placesList = document.getElementById("places-list");
+        placesList.innerHTML = "";
+        data.places.forEach(place => {
+            let placesListItem = document.createElement("li");
+            placesListItem.textContent = place.name;
+            placesListItem.id = place.locationId;
+            placesList.appendChild(placesListItem);
+
+            placesListItem.addEventListener('click', () =>
+            {
+                navigateToLocation(place.locationId);
+            });
+        });
+    })
+}
+
+function navigateToLocation(id) {
+        let marker = markers.get(id);
+        marker.openPopup();
 }

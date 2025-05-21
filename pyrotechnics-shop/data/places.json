@@ -7,13 +7,20 @@
     "name": "Balloon Tours",
     "description": "Parachutes",
     
-    "markerIcon": "markers/artgallery.png"
+    "markerIcon": "../markers/airballoon.png"
     },
     {
     "id": 2,
     "name": "Fireworks Dealers",
     "description": "find pyrotechnics in Montreal!!",
-    "markerIcon": "coffeeCup.png"
+    "markerIcon": "../markers/fireworkicon.png"
+    },
+    {
+    "id": 3,
+    "name": "Firework Shows",
+    "description": "Shows!",
+        
+    "markerIcon": "../markers/fireworkshowicon.png"
     }
     ],
 
@@ -26,17 +33,145 @@
 
     "coordinates": "-73.2782,45.3205,0.0"
     },
-    "categoryId": 1
+    "categoryId": 1,
+    "locationId": 1
     },
-
-    
     {
     "name": "Boutique Kody Rock",
     "description": "Fireworks & Flags ",
     "point": {
     "coordinates": "-73.55764783151828,45.51684318967159,0.0"
     },
-    "categoryId": 2
+    "categoryId": 2,
+    "locationId": 2
+    },
+
+    {
+    "name": "Pyromax Pyrotechnique Inc",
+    "description": "Pyrotechnic Store",
+    "point": {
+    "coordinates": "-71.82616577440751,47.07035680997802,0.0"
+    },
+    "categoryId": 2,
+    "locationId": 3
+    },
+    {
+     "name": "BEM Fireworks",
+     "description": "Fireworks Store",
+     "point": {
+     "coordinates": "-74.15496826657268,45.33670190951771,0.0"
+     },
+     "categoryId": 2,
+    "locationId": 4
+    },
+
+    {
+    "name": "Quebec Montgolfieres Inc",
+    "description": "Ballon ride tour agency",
+    "point": {
+    "coordinates": "-71.21859147116767,46.81385777666072,0.0"
+    },
+    "categoryId": 1,
+     "locationId": 5
+    },
+    {
+    "name": "Croisieres AML",
+    "description": "Firework Show Viewing Point",
+    "point": {
+    "coordinates": "-73.55211736505261,45.50294310653999,0.0"
+    },
+    "categoryId": 3,
+    "locationId": 6
+    },
+    {
+    "name": "Croisieres AML",
+    "description": "Firework Show Viewing Point",
+    "point": {
+    "coordinates": "-73.55211736505261,45.50294310653999,0.0"
+    },
+    "categoryId": 3,
+    "locationId": 6
+    },
+    {
+    "name": "Fairmont Le Château Frontenac",
+    "description": "Hotel with great view of fireworks",
+    "point": {
+    "coordinates": "-71.20715906304318,46.81839596687145,0.0"
+    },
+    "categoryId": 3,
+    "locationId": 7
+    },
+    {
+    "name": "Museum of Civilization",
+    "description": "Watch fireworks from the museums rooftop",
+    "point": {
+    "coordinates": "-71.20219914457289,46.81543731704948,0.0"
+    },
+    "categoryId": 3,
+    "locationId": 8
+    },
+    {
+    "name": "Residence of the Governor General at the Citadelle",
+    "description": "Watch fireworks from the citadelle, overlooking the st lawrence",
+    "point": {
+    "coordinates": "-71.20522630499585,46.8085748853551,0.0"
+    },
+    "categoryId": 3,
+    "locationId": 9
+    },
+    {
+    "name": "Hilton Quebec",
+    "description": "Watch fireworks from the Hilton Hotel",
+    "point": {
+    "coordinates": "-71.21517940409737,46.81065643162589,0.0"
+    },
+    "categoryId": 3,
+    "locationId": 10
+    },
+    {
+    "name": "La Ronde",
+    "description": "Watch the international fireworks competition at the amusement park",
+    "point": {
+    "coordinates": "-73.53454561423358,45.5221710582741,0.0"
+    },
+    "categoryId": 3,
+    "locationId": 11
+    },
+    {
+    "name": "GFA PYRO",
+    "description": "Fireworks supplier",
+    "point": {
+    "coordinates": "-74.02182734081455,45.55433116489671,0.0"
+    },
+    "categoryId": 2,
+    "locationId": 12
+    },
+    {
+    "name": "Royal Pyrotechnie Inc.",
+    "description": "Fireworks store",
+    "point": {
+    "coordinates": "-72.90667001495247,45.533283250892175,0.0"
+    },
+    "categoryId": 2,
+    "locationId": 13
+    },
+    {
+    "name": "Jojo's Pawn Shop",
+    "description": "Pyrotechnic shop with BB guns",
+    "point": {
+    "coordinates": "-73.65884282283429,45.46248410311101,0.0"
+    },
+    "categoryId": 2,
+    "locationId": 14
+    },
+    {
+    "name": "La Magie de l'Air",
+    "description": "Balloon ride tour agency east of montreal",
+    "point": {
+    "coordinates": "-73.25786103615253,45.528005247470404,0.0"
+    },
+    "categoryId": 1,
+    "locationId": 15
     }
     ]
    }
