@@ -204,7 +204,7 @@ nav ul
   text-align: center;
   background-color: #000000c1;
   color: rgba(255, 255, 255, 0.9);
-  text-shadow: 0 0 10px rgb(255, 26, 26), 0 0 15px rgba(255, 0, 0, 0.8), 0 0 20px rgba(255, 0, 0, 0.6);
+  text-shadow: 0 0 10px rgb(255, 0, 0), 0 0 15px rgb(255, 41, 41), 0 0 20px rgba(255, 0, 0, 0.6);
   /* Glowing text */
 
 }
@@ -214,7 +214,6 @@ nav ul
   /* 1/4 of the space */
   flex: 1;
   padding: 20px;
-  background-color: #000000c1;
   color: rgb(218, 239, 255);
   border: 2px solid rgb(255, 72, 0);
 
@@ -274,10 +273,10 @@ nav ul
 
 .container 
 {
+
   display: flex;
   margin-left: 10%;
   /*solid background behind content */
-  background-color: #000000;
   margin-right: 10%;
 }
 
@@ -384,8 +383,6 @@ from previous assignment*/
   padding: 20px;
   border: 2px solid #000000;
   text-align: center;
-  background-color: #000000c1;
-  color: rgba(255, 255, 255, 0.9);
 }
 
 /* product details page overall fonts and colors*/
@@ -459,12 +456,12 @@ text-align: center;
 /* Cart Css */
 
 .shop-main-content {
+    background-color: var(--background-color);
+   color: var(--fb-font-color);
   width: 90%;
   margin: auto;
   padding: 20px;
   border: 2px solid #000000;
-  background-color: #000000c1;
-  color: rgba(255, 255, 255, 0.9);
 }
 
 .cart-item img {
@@ -577,21 +574,54 @@ text-align: center;
 
 /* theme switch */
 :root{
-  --fb-background-color: #121212;
-  --fb-font-color: #7b7281;
+  --background-color: #111;
+    --fb-font-color: #ffffff;
+      --container-bg: #000000;
+
 }
 
 :root[data-theme ="light"]
 {
-   --fb-background-color: #ffffff;
+  --background-color: #ffffff;  
    --fb-font-color: #000000;
+     --container-bg: #f9f9f9;
+
 } 
+.events-main-content,
+.event-container
+{
+   background-color: var(--background-color);
+   color: var(--fb-font-color);
+}
 body
 {
-   background-color: var(--fb-background-color);
+  background-color: var(--background-color);
    color: var(--fb-font-color);
 }
 
+.container,
+.aside-content,
+.main-content {
+  background-color: var(--container-bg);
+   color: var(--fb-font-color);
+}
+
+.testament,
+.mission
+
+{
+    background-color: var(--container-bg);
+
+}
+.login-main-content,
+.contact-main-content
+
+{
+    background-color: var(--container-bg);
+       color: var(--fb-font-color);
+
+
+}
 /* checkout form */
 .checkout-main-content
  {

@@ -6,11 +6,12 @@ import { initCartPage } from "./modules/cart.js";
 import { initShopPage } from "./modules/shop.js";
 import { handleLogin } from "./modules/login.js";
 import { handleCheckoutButton } from "./modules/cart.js";
+import { theme } from "./modules/theme.js";
 
 document.addEventListener('DOMContentLoaded', initApp);
 
 function initApp() {
-
+  theme();
     const page = document.querySelector('html')?.dataset.page;
 
     if (page === "map") {
