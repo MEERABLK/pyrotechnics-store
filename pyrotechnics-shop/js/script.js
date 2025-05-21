@@ -2,6 +2,8 @@ import { initLeafletMap } from "./modules/map.js";
 import { fetchData } from "./modules/fetchWrapper.js";
 import { initHomePage } from "./modules/index.js";
 import { initProductPage } from "./modules/product.js";
+import { initCartPage } from "./modules/cart.js";
+import { initShopPage } from "./modules/shop.js";
 
 document.addEventListener('DOMContentLoaded', initApp);
 
@@ -12,17 +14,20 @@ function initApp() {
     if (page === "map") {
         initLeafletMap(); // only run map on the map page
     }
-
     console.log("initializing the app...");
-
     //only run on home page
-  if (page === "home") {
-    initHomePage();
-  }
-
-  if (page === "product") {
-  initProductPage();
-}
+    if (page === "home") {
+        initHomePage();
+    }
+    if (page === "product") {
+        initProductPage();
+    }
+    if (page === "cart") {
+        initCartPage();
+    }
+    if (page === "shop") {
+        initShopPage();
+    }
     const btnShow = document.getElementById("btn-fetch-launches");
 if (btnShow) {
   btnShow.addEventListener('click', fetchShows);

@@ -1,6 +1,6 @@
 <!--  # Home Page -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-page="cart">
 
 <head>
   <meta charset="UTF-8">
@@ -8,14 +8,10 @@
   <meta name="description" content="A sample webpage">
   <title>PyroSphere</title>
   <link rel="stylesheet" href="../css/styles.css">
-  <script src="js/script.js" defer></script>
+  <script type="module" src="../js/script.js" defer></script>
 </head>
 
 <body class="body-image">
-
-
-
-
   <header class="home-header">
 
     <nav>
@@ -34,8 +30,6 @@
 
     <!-- for seperating search and cart buttons  -->
     <div class="header-tools">
-
-        
         <!-- cart page is linked with the button of cart -->
        <a  href="cart.html"  class="cart-icon"><span class="emojione-monotone--shopping-cart"></span></a>
       </div>
@@ -45,55 +39,40 @@
   </header>
 
   <div class="container">
-    <main class="product-main-content">
+    <main class="shop-main-content">
       <div id="shopping-cart">
         <h2 id="cart-header">SHOPPING CART</h2>
-        <span id="price-label"><b> PRICE</b></span>
-        <span id="qty-label"><b> QTY</b></span>
-        <span id="total-label"><b> TOTAL</b></span>
-        <section id="cart-item">
+        <div class="cart-labels">
+          <img id="label-spacer">
+          <span class="label"><b> PRICE</b></span>
+          <span class="label"><b> QTY</b></span>
+          <span class="label"><b> TOTAL</b></span>
+        </div>
 
-          <figure class=""> 
-
-            <div class="card">
-              <img src="../images/single-shot-firework-tube.png" alt="TNT shop other Aerials #100 product" class="product-img">
-              
-            </div>
-          </figure>
-       
-          <!-- section for the cart detail on product -->
-          <section>
-                <!-- adding placeholders -->
-                <h3 id="product-name">Product Title</h3> 
-                <button id="btn-remove-from-cart" class="btn btn-primary" style="background-color: rgb(243, 219, 8);"> Remove</button>
-              </section>
-              <section id="cart-product-info">
-                <span id="price"><b> PRICE</b></span>
-                <span id="qty"><b> QTY</b></span>
-                <span id="total"><b> TOTAL</b></span>
-              </section>
-               <br>
-               <br>
-              <br>
-            
-
+        
+        <div id="itemDisplay">
+          <!-- items display here -->
+        </div>
+          
         </section>
 
         <!-- section for order summary -->
 
         <section id="order-summary">
-          <div>
+        <div>
     <h2 id="summary-title">ORDER SUMMARY</h2>
     <br>
     <span id="final-total"><b> TOTAL</b></span>
    <br>
    <br>
-   <button id="btn-apply-coupon" class="btn btn-primary" style="background-color: rgb(243, 219, 8)"> <span id="apply-coupon-button">Apply Coupon</span></button>
-   <button id="btn-shipping-options" class="btn btn-primary" style="background-color: rgb(243, 219, 8)"> Shipping Options</button>
+   <div class="checkout-button-container">
+   <button class="checkout-button" style="background-color: rgb(243, 219, 8)"> <span id="apply-coupon-button">Apply Coupon</span></button>
+   <button class="checkout-button" style="background-color: rgb(243, 219, 8)"> Shipping Options</button>
   
    <a href="checkout.html" class="linkpage">
-    <button id="btn-checkout" class="btn btn-primary" style="background-color: rgb(243, 219, 8);font-size: 20px;"> PROCEED TO CHECKOUT</button>
+    <button class="checkout-button" style="background-color: rgb(243, 219, 8);font-size: 20px;"> PROCEED TO CHECKOUT</button>
  </a>
+</div>
 </div>
 </section>
     </main>

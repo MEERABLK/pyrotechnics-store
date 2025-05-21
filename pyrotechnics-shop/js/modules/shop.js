@@ -1,7 +1,6 @@
-document.addEventListener('DOMContentLoaded', initApp);
 let category = "none";
 
-function initApp() {
+export function initShopPage() {
     console.log("initializing the app...");
     displayFilteredShopItems();
     const searchBar = document.getElementById("searchBar");
