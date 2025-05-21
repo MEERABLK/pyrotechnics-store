@@ -86,3 +86,22 @@ function removeItem(id) {
     sessionStorage.setItem('cart', JSON.stringify(cart));
     itemDisplay();
 }
+
+
+export function handleCheckoutButton() {
+  const checkoutBtn = document.getElementById('btn-checkout');
+
+  if (checkoutBtn) {
+    checkoutBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      const isLoggedIn = sessionStorage.getItem('loggedIn');
+
+      if (isLoggedIn === 'true') {
+        window.location = 'checkout.html';
+      } else {
+        window.location= 'login.html';
+      }
+    });
+  }
+}

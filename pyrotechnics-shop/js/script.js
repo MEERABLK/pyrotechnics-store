@@ -4,6 +4,8 @@ import { initHomePage } from "./modules/index.js";
 import { initProductPage } from "./modules/product.js";
 import { initCartPage } from "./modules/cart.js";
 import { initShopPage } from "./modules/shop.js";
+import { handleLogin } from "./modules/login.js";
+import { handleCheckoutButton } from "./modules/cart.js";
 
 document.addEventListener('DOMContentLoaded', initApp);
 
@@ -22,8 +24,14 @@ function initApp() {
     if (page === "product") {
         initProductPage();
     }
+    if (page === "login") {
+  handleLogin();
+}
+
     if (page === "cart") {
         initCartPage();
+          handleCheckoutButton();
+
     }
     if (page === "shop") {
         initShopPage();
