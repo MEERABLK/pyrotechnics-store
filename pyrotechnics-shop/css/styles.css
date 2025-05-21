@@ -391,8 +391,6 @@ from previous assignment*/
   margin: auto;
   padding: 20px;
   border: 2px solid #000000;
-  background-color: #000000c1;
-  color: rgba(255, 255, 255, 0.9);
 }
 .product-card img
 {
@@ -614,8 +612,9 @@ body
 
 }
 .login-main-content,
-.contact-main-content
-
+.contact-main-content,
+.product-main-content,
+.checkout-main-content
 {
     background-color: var(--container-bg);
        color: var(--fb-font-color);
@@ -628,8 +627,6 @@ body
 
   /* to center the form */
   margin: auto;
-  border: 2px solid #000000;
-  background-color: #000000c1;
   color: rgba(255, 255, 255, 0.9);
 }
 
