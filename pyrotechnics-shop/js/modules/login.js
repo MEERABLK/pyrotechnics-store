@@ -12,7 +12,7 @@ export function handleLogin() {
 
         // need to use ?=. to look ahead if the password contains at least one
    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/;
-   const usernameRegex = /^(?=.*[a-zA-Z])\w+@[a-zA-Z]+\.[a-z]{2,}$/;
+   const usernameRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 
          if (!username || !password) {
       showAlert('Please enter both username and password.', 'danger');
