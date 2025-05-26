@@ -82,7 +82,7 @@ function displayLocations() {
     })
     .then(data => {
         const placesList = document.getElementById("places-list");
-        placesList.innerHTML = "";
+        placesList.innerHTML="";
         data.places.forEach(place => {
             let placesListItem = document.createElement("li");
             placesListItem.textContent = place.name;

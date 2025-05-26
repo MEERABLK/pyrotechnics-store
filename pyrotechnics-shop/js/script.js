@@ -5,6 +5,7 @@ import { initProductPage } from "./modules/product.js";
 import { initCartPage } from "./modules/cart.js";
 import { initShopPage } from "./modules/shop.js";
 import { handleLogin } from "./modules/login.js";
+import { handleContact } from "./modules/contact.js";
 import { handleCheckoutButton } from "./modules/cart.js";
 import { theme } from "./modules/theme.js";
 
@@ -26,8 +27,11 @@ function initApp() {
         initProductPage();
     }
     if (page === "login") {
-  handleLogin();
-}
+        handleLogin();
+    }
+    if (page === "contact") {
+        handleContact();
+    }
 
     if (page === "cart") {
         initCartPage();
