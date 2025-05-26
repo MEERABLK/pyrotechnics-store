@@ -27,11 +27,10 @@
 
     "places": [
     {
-    "name": "Montréal Montgolfière",
+    "name": "Wingbuddy",
     "description": "Balloon ride tour agency",
     "point": {
-
-    "coordinates": "-73.2782,45.3205,0.0"
+    "coordinates": "-73.65486212107228,45.544104201405275,0.0"
     },
     "categoryId": 1,
     "locationId": 1
@@ -47,10 +46,11 @@
     },
 
     {
-    "name": "Pyromax Pyrotechnique Inc",
-    "description": "Pyrotechnic Store",
+    "name": "LOL Party Centre",
+    "description": "Celebrations Shop",
     "point": {
-    "coordinates": "-71.82616577440751,47.07035680997802,0.0"
+       
+    "coordinates": "-73.56909447930538, 45.51043529271992,0.0"
     },
     "categoryId": 2,
     "locationId": 3
