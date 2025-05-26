@@ -15,11 +15,13 @@ export function initHomePage() {
       return response.json();
     })
     .then(data => {
-      const featuredProducts = data.products.slice(0, 6); // Only the first 2
+      //let 6 products of differentimages
+      const featuredProducts = data.products.slice(0, 6); 
             let currentIndex = 0;
-
+//switch between products so no foreach
  function displayProduct(index) {
         const product = featuredProducts[index];
+        //clean container before adding a new image
          container.innerHTML = "";
         const card = document.createElement("div");
         //using css class to add the design structure of the product card inside a div which will
@@ -61,6 +63,7 @@ export function initHomePage() {
       }
       function startCarousel() {
  displayProduct(currentIndex);
+ //to change use modulo to move forward in index and loop back to beginning
         currentIndex = (currentIndex + 1) % featuredProducts.length;
         setTimeout(startCarousel, 4000); // Call again after 4 seconds
       }
