@@ -6,6 +6,7 @@ import { initCartPage } from "./modules/cart.js";
 import { initShopPage } from "./modules/shop.js";
 import { handleLogin } from "./modules/login.js";
 import { handleContact } from "./modules/contact.js";
+import { handleCheckout } from "./modules/checkout.js";
 import { handleCheckoutButton } from "./modules/cart.js";
 import { theme } from "./modules/theme.js";
 
@@ -32,11 +33,12 @@ function initApp() {
     if (page === "contact") {
         handleContact();
     }
-
+    if (page === "checkout") {
+        handleCheckout();
+    }
     if (page === "cart") {
         initCartPage();
-          handleCheckoutButton();
-
+        handleCheckoutButton();
     }
     if (page === "shop") {
         initShopPage();
@@ -101,5 +103,3 @@ function createNewElement(parent, eleName, content)
 
     return newElem;
 }
-
-
