@@ -107,8 +107,18 @@
             "QuantityInStock": 89,
             "Make": "Globe Manufacturing",
             "ThumbnailImage": "../images/helmetset1.jpg"
+          },
+{
+            "ItemID":7,
+            "category_id": 2,
+            "ItemTitle": "Fire Extinguisher",
+            "Description": "Shop our range of fire extinguishers for the home and office, including rechargeable and disposable extinguishers in a range of sizes",
+            "Brand": "Garrison",
+            "UnitPrice": 50.00,
+            "QuantityInStock": 20,
+            "Make": "Canadian Tire Corporation (Private Label)",
+            "ThumbnailImage": "../images/fire-extinguisher.jpg"
           }
-
 
     ]
 
