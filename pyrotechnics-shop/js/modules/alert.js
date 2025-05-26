@@ -1,8 +1,8 @@
 // for resuing show alert 
 export  function showAlert(message, type)
  {
-    const alertPlaceholder = document.getElementById('formAlerts')
-  const wrapper = document.createElement('div')
+    const alertPlaceholder = document.getElementById('formAlerts');
+  const wrapper = document.createElement('div');
   
   alertPlaceholder.innerHTML="";
   wrapper.innerHTML = [
@@ -10,7 +10,7 @@ export  function showAlert(message, type)
     `   <div>${message}</div>`,
     '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
     '</div>'
-  ].join('')
+  ].join('');
 
 //property of Dom firstChild
   if (alertPlaceholder.firstChild)
