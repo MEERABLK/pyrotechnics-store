@@ -15,9 +15,12 @@ export function initHomePage() {
       return response.json();
     })
     .then(data => {
-      const featuredProducts = data.products.slice(0, 2); // Only the first 2
+      const featuredProducts = data.products.slice(0, 6); // Only the first 2
+            let currentIndex = 0;
 
-      featuredProducts.forEach(product => {
+ function displayProduct(index) {
+        const product = featuredProducts[index];
+         container.innerHTML = "";
         const card = document.createElement("div");
         //using css class to add the design structure of the product card inside a div which will
         //have the figure
@@ -55,7 +58,16 @@ export function initHomePage() {
         card.appendChild(title);
 
         container.appendChild(card);
-      });
+      }
+      function startCarousel() {
+ displayProduct(currentIndex);
+        currentIndex = (currentIndex + 1) % featuredProducts.length;
+        setTimeout(startCarousel, 4000); // Call again after 4 seconds
+      }
+
+       // Start the carousel loop
+      startCarousel();
+    
     })
     .catch(error => {
       console.error("Error displaying featured products:", error);
