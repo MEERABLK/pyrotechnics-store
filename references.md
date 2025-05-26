@@ -30,4 +30,3 @@ https://iconify.design/
 
 ## Notes
 https://lesgrandsfeux.com/en
-## Screenshots
