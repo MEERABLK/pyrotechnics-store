@@ -4,7 +4,7 @@ export  function showAlert(message, type)
     const alertPlaceholder = document.getElementById('formAlerts')
   const wrapper = document.createElement('div')
   
-  
+  alertPlaceholder.innerHTML="";
   wrapper.innerHTML = [
     `<div class="alert alert-${type} alert-dismissible" role="alert">`,
     `   <div>${message}</div>`,

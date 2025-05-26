@@ -11,8 +11,6 @@ html,body
   margin: 0px 20px 20px;
   padding: 20px;
   text-align: center;
-  border: 1px solid #fff;
-
   background-color: rgb(17, 17, 17);
 }
 
@@ -153,7 +151,6 @@ nav ul {
   text-shadow: none;
   font-size: 16px;
   font-weight: bold;
-  color: rgba(246, 242, 242, 0.999);
 
 }
 
@@ -332,21 +329,26 @@ from previous assignment*/
   /* centers */
   background-position: center;
 }
-
+.login-container
+{
+  margin-left: 10%;
+  margin-right: 10%;
+  
+  /*solid background behind content */
+}
 .login
  {
   background-color: rgba(47, 52, 65, 0.519);
   padding: 20px;
   border-radius: 3px;
   width: 100%;
-  max-width: 400px;
+  max-width: 600px;
   /* center main content */
   margin: 50px auto;
 }
 
 .signin-button 
 {
-  margin-left: 70%;
   background-color: aqua;
   border-radius: 5px;
   padding-left: 15px;
@@ -362,8 +364,6 @@ from previous assignment*/
   padding: 20px;
   border: 2px solid #000000;
   text-align: center;
-  background-color: #000000c1;
-  color: rgba(255, 255, 255, 0.9);
 }
 
 /* form contact */
@@ -620,6 +620,18 @@ body
     background-color: var(--container-bg);
        color: var(--fb-font-color);
 
+
+}
+
+.pagecard{
+    border: 3px solid orangered;
+    background-color: var(--container-bg);
+       color: var(--fb-font-color);
+}
+.linkpage
+{
+    background-color: var(--container-bg);
+       color: var(--fb-font-color);
 
 }
 /* checkout form */
