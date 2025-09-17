@@ -50,7 +50,7 @@
             "UnitPrice": 49.99,
             "QuantityInStock": 50,
             "Make": "TNT Fireworks",
-            "ThumbnailImage": "/images/multi-shot-tiger-fireworks-packet.png"
+            "ThumbnailImage": "images/multi-shot-tiger-fireworks-packet.png"
           },
           {
             "ItemID":2,
@@ -61,7 +61,7 @@
             "UnitPrice": 20.00,
             "QuantityInStock": 30,
             "Make": "Enola Gaye",
-            "ThumbnailImage": "/images/color-smoke-product.jpg"
+            "ThumbnailImage": "images/color-smoke-product.jpg"
           },
           {
             "ItemID":3,
@@ -72,7 +72,7 @@
             "UnitPrice": 15.00,
             "QuantityInStock": 10,
             "Make": "TNT Fireworks",
-            "ThumbnailImage": "/images/single-shot-firework-tube.png"
+            "ThumbnailImage": "images/single-shot-firework-tube.png"
           },
 
           {
@@ -84,7 +84,7 @@
             "UnitPrice":  500.00,
             "QuantityInStock": 30,
             "Make": "Holatron Systems",
-            "ThumbnailImage": "/images/single-shot-firework-tube.png"
+            "ThumbnailImage": "images/single-shot-firework-tube.png"
           },
           {
             "ItemID":5,
@@ -95,7 +95,7 @@
             "UnitPrice": 2.00,
             "QuantityInStock": 10,
             "Make": "Sunrich Fireworks",
-            "ThumbnailImage": "/images/firecracker-1.png"
+            "ThumbnailImage": "images/firecracker-1.png"
           },
           {
             "ItemID":6,
@@ -106,7 +106,7 @@
             "UnitPrice": 250.00,
             "QuantityInStock": 89,
             "Make": "Globe Manufacturing",
-            "ThumbnailImage": "/images/helmetset1.jpg"
+            "ThumbnailImage": "images/helmetset1.jpg"
           },
 {
             "ItemID":7,
@@ -117,7 +117,7 @@
             "UnitPrice": 50.00,
             "QuantityInStock": 20,
             "Make": "Canadian Tire Corporation (Private Label)",
-            "ThumbnailImage": "/images/fire-extinguisher.jpg"
+            "ThumbnailImage": "images/fire-extinguisher.jpg"
           }
 
     ]
